@@ -1,0 +1,381 @@
+/** https://www.toptal.com/developers/cssminifier **/
+/** COMMON - START **/
+:root {
+    --brand-color-1: #660202;
+	--brand-color-2: #a41319;
+	--brand-color-3: #ec3138;
+	--brand-color-4: #f75d13;
+	--brand-color-5: #e89c1e; /*--brand-color-5: #f8b731;*/
+	--brand-color-6: #aaa6c8;	
+	--brand-color-7: #ffe38e; /*light yellow*/
+	--brand-color-8: #ccc6c8; /*light grey red*/
+	
+}
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    /* Optional: Also consider setting max-width to 100% for images/videos */
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+.container{
+	padding:0px;
+	overflow-x: hidden;
+}
+
+.sml-link {
+	color:	var(--brand-color-5);
+	font-weight: 500;
+}
+.white-link {
+	color: #ffffff;
+	font-weight: 400;
+}
+.white-link:hover {
+	color: #ffffff;
+	font-weight: 400;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.btn-primary {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+}
+.btn-primary:hover{
+	background-color: var(--brand-color-5);
+	border-color: var(--brand-color-5);
+}
+.fade-in-image { animation: fadeIn 5s; }
+
+
+
+/*.transform {
+  transform: scale(1.3);
+}
+*/
+		
+h5{
+	font-size: 1.2rem;
+}
+/** COMMON - END **/
+
+/** HEADER - START **/
+.container-top-bar{ 
+	width:100%;
+	background-color: var(--brand-color-1);
+	padding: 0;
+	margin:0;
+}
+#top-bar{	
+	padding: 10px;
+
+}
+
+#top-bar .social-col{ 
+	max-width: 200px;
+	padding:0;
+	margin: 1px 4px;
+}
+#top-bar .social-col table{ 	
+	width: 100%;
+}
+#top-bar a{
+	color: #fff;
+}
+#top-bar .social-col a:hover{
+	color: var(--brand-color-7);
+}
+
+#top-bar .collapse .nav-item{
+	padding: 0 12px;
+}
+
+#header-bar .contact-icon{
+	max-width: 35px;
+	padding: 5px 6px 0 0;
+}
+#header-bar .col-logo{
+	max-width: 135px;
+}
+
+
+#header-bar .site-title{
+	color:	var(--brand-color-1);
+	font-size: 2rem;
+	font-family: "Georama", "Comic Sans", cursive;
+	font-weight:500;
+}
+#header-bar .title{
+	color:	var(--brand-color-6);
+	font-size: .8rem
+}
+#header-bar .content{
+	font-size:1rem;
+	font-weight: 600;
+}
+
+/** HEADER - END **/
+
+/** SEARCH BAR - START **/
+#div-main-search {
+	background-color: #ffffff;
+	border: solid 0pt #333333;
+	max-width: 360px;
+	border-radius: 21px;
+	padding: 1px 1px;
+	justify-content: right;
+}
+#skeyword {
+	height:20px;
+	font-size: 1rem;
+	padding: 1px 1px;
+}
+.search-keyword{
+	background-color: #ffffff;
+	border: 0pt;
+	margin-top:3px
+}
+
+#div-search-button {
+	border-radius: 0px 15px 15px 0px;
+	background-color: var(--brand-color-2);
+}
+#search-button {
+	border: 0pt;	
+	padding: 1px 0px;
+	text-align: right;
+	color: white;
+	height: 26px;
+}
+#search-button:hover  {
+	color: #cccccc;
+}
+
+/** SEARCH BAR - END **/
+
+/** HOME PAGE - START **/
+
+#home-jumbotron {
+	background-color: #5491cb;
+	background-image: url("../img/banner2.webp");
+  	background-size: cover;
+	padding: 2rem 2rem;
+	border-radius: 8px;
+}
+
+#carousel-home{
+	border-radius: 0px;
+	margin-top: 20px;
+	border-top: 0px solid var(--brand-color-2);	
+}
+
+
+
+#stats-row{
+	border-top: 1px solid var(--brand-color-7);
+	border-bottom: 1px solid var(--brand-color-7);
+	background-image: url("../img/bak-1.jpg");
+  	background-size: cover;
+}
+#stats-row .stats-icon{
+	padding: 0 10px 5px 0;
+	color : var(--brand-color-1)
+}
+
+#stats-row .title{
+	font-size :1.3rem;
+}
+
+#offer{
+	border-bottom: 0px solid var(--brand-color-2);	
+	border-left: 0px solid var(--brand-color-2);	
+	border-right: 0px solid var(--brand-color-2);
+	border-radius: 0px;
+	border-top: 2px solid var(--brand-color-7);
+}
+#offer h3{
+	color: var(--brand-color-1);
+	font-family: "Dynalight", "Comic Sans", cursive;
+	font-size: 2.5rem;
+	font-weight: 500;	
+}
+#offer h4{
+	font-family: "Dynalight", "Comic Sans", cursive;
+	font-size: 2.2rem;
+	font-weight: 500;
+}
+#offer .btn{
+	background-color: var(--brand-color-1);
+	border: 0px solid var(--brand-color-2);
+	border-radius: 20px;
+}
+#offer .events img{
+	    border-top-left-radius: 0px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 60px;
+}
+#offer .corporate{
+	background-color: #FDF5E5;
+	padding:15px;
+}
+#offer .private{
+	background-color: #FEDCC0;	
+}
+#offer .social{
+	background-color: #B9D7DA;	
+}
+#offer .pic{
+	margin-bottom: 15px;
+}
+#offer li {
+	font-family: "Georama";
+	letter-spacing: .05rem;
+	font-weight:500;
+}
+
+#partners .title{
+	max-width: 180px;
+}
+
+#partners h3{
+	font-family: "Dynalight", "Comic Sans", cursive;
+	font-size: 2.2rem;
+	font-weight: 500;
+	color: var(--brand-color-1);
+}
+
+#partners hr{
+	border: none; 
+    height: 2px; 
+    background-color: var(--brand-color-1);
+    margin: 20px 0; 
+}
+.image-hover-effect img {
+    /* Initially apply grayscale filter */
+    filter: grayscale(100%);
+    /* Add a smooth transition for the filter effect */
+    transition: filter 0.3s ease-in-out;
+}
+
+.image-hover-effect:hover img {
+    /* On hover, remove the grayscale filter to show actual colors */
+    filter: grayscale(0%);
+}
+
+/* Optional: Add a slight scale effect on hover for extra polish */
+.image-hover-effect img {
+    transform: scale(1);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.image-hover-effect:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/** HOME PAGE - END **/
+
+/** INNER PAGES - START **/
+
+.container-inner-banner{
+	padding-bottom:20px;
+}
+.container-inner-main{
+	padding:20px;
+}
+.page-h1{ 
+font-family: "Dynalight", "Comic Sans", cursive;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--brand-color-1);
+	padding: 20px 10px;
+}
+.page-h2{ 
+font-family: "Dynalight", "Comic Sans", cursive;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--brand-color-1);
+	padding: 10px 10px;
+}
+
+.page-h3{ 
+font-family: "Dynalight", "Comic Sans", cursive;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--brand-color-1);
+	padding: 5px 10px;
+}
+.hr-about-us{
+	border: none;
+    height: 3px;
+    background-color: var(--brand-color-5);
+    margin: 20px 0;
+}
+
+/** INNER PAGES - END **/
+
+/** FOOTER - START **/
+footer{
+	padding: 0 12px;
+}
+#footer-menu-bar {
+	background-color: var(--brand-color-5);	
+	border-radius: 6px 6px 0px 0px;
+}
+#footer-menu-bar .col{	
+	padding: 10px 25px;
+}
+#footer-menu-bar .about{
+	text-align: center;
+}
+#footer-menu-bar .contact{	
+	border-right: 1px dotted var(--brand-color-7);
+	border-left: 1px dotted var(--brand-color-7);	
+}
+#footer-menu-bar .contact table td{
+padding: 10px 5px;	
+} 
+#footer-menu-copyright {
+	background-color: var(--brand-color-1);
+	color: #ffffff;
+	font-size: .9rem;
+} 
+/** FOOTER - END **/
+
+
+/** SIDE BAR - START **/
+body{
+	position: relative; /* required */
+}
+  
+/* Custom style to stick list group on top */
+.list-group{
+    position: sticky;
+    top: 15px;
+}
+.list-group-item {
+    padding: 0.4rem .5rem;
+}
+/** SDIE BAR - END **/
+
+
+/** GOOGLE ADS - START **/
+.sideBarAds{ padding: 10px 0; text-align:center;}
+
+
+/** GOOGLE ADS - END **/
+
+/** FAQs - START **/
+.faq-div { padding: 30px 40px;}
+.faq-q { font-weight:600; font-size: 1.3rem; margin-top: 30px;} 
+.faq-a { font-size: 1rem; margin-bottom: 10px; padding: 2px 12px;}
+
+/** FAQs - END **/
+
+

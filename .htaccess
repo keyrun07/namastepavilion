@@ -1,0 +1,31 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Define the base URL relative to the DocumentRoot of your Apache server
+# In XAMPP, this is often /var/www/html or C:/xampp/htdocs
+# You need to specify the path *from* the Apache DocumentRoot *to* your application folder.
+# For http://localhost:8080/namaste-resources/, the RewriteBase should be /namaste-resources/
+RewriteBase /namaste-resources/
+
+# 1. Internally rewrite extensionless URLs to include .php
+#    This rule checks if a file with the requested name plus a .php extension exists
+RewriteCond %{REQUEST_FILENAME}.php -f
+#    If it does, internally rewrite the URL to include .php
+#    The ^([^/.]+)$ matches paths like 'about', 'contact', but not 'css/style.css' or 'image.png'
+RewriteRule ^([^/.]+)$ $1.php [L]
+
+# 2. OPTIONAL: Redirect old .php URLs to new extensionless URLs (SEO friendly)
+#    This prevents duplicate content issues and redirects users/search engines who have old links.
+#    It's particularly useful if your site was previously accessed with .php extensions.
+#    This condition ensures we only process requests that explicitly have .php in them
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php\sHTTP/ [NC]
+#    This rule captures the part before .php and redirects to it
+#    R=301: Permanent redirect (good for SEO)
+#    L: Last rule, stop processing further rules
+RewriteRule ^([^.]+)\.php$ $1 [R=301,L]
+
+# 3. Handle specific index.php case (important for root of your subdirectory)
+#    If someone accesses http://localhost:8080/namaste-resources/, this ensures
+#    it doesn't redirect from index.php to just nothing.
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/namaste-resources/index\.php\sHTTP/ [NC]
+RewriteRule ^index\.php$ /namaste-resources/ [R=301,L]
