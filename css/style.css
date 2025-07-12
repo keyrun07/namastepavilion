@@ -9,7 +9,7 @@
 	--brand-color-6: #aaa6c8;	
 	--brand-color-7: #ffe38e; /*light yellow*/
 	--brand-color-8: #ccc6c8; /*light grey red*/
-	
+	--brand-color-9: #ffffff; /*white*/
 }
 body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
@@ -67,28 +67,35 @@ h5{
 /** HEADER - START **/
 .container-top-bar{ 
 	width:100%;
-	background-color: var(--brand-color-1);
+	background-color: var(--brand-color-9);
 	padding: 0;
 	margin:0;
+	border-bottom: #ccc solid 1pt;
+	
 }
 #top-bar{	
 	padding: 10px;
 
 }
+#top-bar .nav-link{	
+	font-size:13px;
+	font-weight: 500;
 
+}
 #top-bar .social-col{ 
 	max-width: 200px;
 	padding:0;
 	margin: 1px 4px;
 }
-#top-bar .social-col table{ 	
-	width: 100%;
-}
+
 #top-bar a{
-	color: #fff;
+	color: var(--brand-color-1);
 }
 #top-bar .social-col a:hover{
 	color: var(--brand-color-7);
+}
+#top-bar .col-logo{
+	max-width: 110px;
 }
 
 #top-bar .collapse .nav-item{
@@ -99,10 +106,10 @@ h5{
 	max-width: 35px;
 	padding: 5px 6px 0 0;
 }
-#header-bar .col-logo{
-	max-width: 135px;
-}
 
+#navbarSupportedContent{
+	max-width:800px;	
+}
 
 #header-bar .site-title{
 	color:	var(--brand-color-1);
@@ -121,75 +128,187 @@ h5{
 
 /** HEADER - END **/
 
-/** SEARCH BAR - START **/
-#div-main-search {
-	background-color: #ffffff;
-	border: solid 0pt #333333;
-	max-width: 360px;
-	border-radius: 21px;
-	padding: 1px 1px;
-	justify-content: right;
-}
-#skeyword {
-	height:20px;
-	font-size: 1rem;
-	padding: 1px 1px;
-}
-.search-keyword{
-	background-color: #ffffff;
-	border: 0pt;
-	margin-top:3px
-}
-
-#div-search-button {
-	border-radius: 0px 15px 15px 0px;
-	background-color: var(--brand-color-2);
-}
-#search-button {
-	border: 0pt;	
-	padding: 1px 0px;
-	text-align: right;
-	color: white;
-	height: 26px;
-}
-#search-button:hover  {
-	color: #cccccc;
-}
-
-/** SEARCH BAR - END **/
 
 /** HOME PAGE - START **/
 
-#home-jumbotron {
-	background-color: #5491cb;
-	background-image: url("../img/banner2.webp");
-  	background-size: cover;
-	padding: 2rem 2rem;
-	border-radius: 8px;
-}
 
+.container-carousel{ 
+	width:100%;
+	background-color: var(--brand-color-9);
+	padding: 0;
+	margin:0;
+	border-bottom: #eeeeee solid 1pt;
+	padding:0px;
+	overflow-x: hidden;
+	
+}
 #carousel-home{
 	border-radius: 0px;
-	margin-top: 20px;
+	margin-top: 0px;
 	border-top: 0px solid var(--brand-color-2);	
 }
 
+#carousel-home .carousel-caption {
+    position: absolute;
+    z-index: 1;
+    display:table;
+    width:100%;
+    height:100%;
+	
+}
 
 
-#stats-row{
+
+#carousel-home .carousel-item {
+    position:relative;
+	height:95%;
+	pointer-events: auto;
+}
+#carousel-home img {
+    margin-top: -5%;
+	pointer-events: none;
+}
+
+
+.carousel-control-prev.top-right,
+.carousel-control-next.top-right {
+	top: 0;
+	right: 0;
+	left: auto;
+	bottom: auto;
+	position: absolute;
+	z-index: 2;
+	padding-top: .5rem;
+	opacity: .9;
+    transition: opacity .1s ease;
+	width: fit-content;
+	padding:10px;	
+}
+
+.carousel-control-prev.top-right {
+  right: 35px; /* Shift "prev" left so it doesn't overlap "next" */
+}
+
+.carousel-indicators [data-bs-target] {
+	width: 100px;
+}
+.carousel-indicators.top-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0.5rem;
+	z-index: 2;
+	justify-content: flex-start;
+	height: 50px;
+}
+
+.carousel-indicators.top-left button {
+  margin-right: 5px;
+}
+
+#carousel-home .slide-counter {
+	position: absolute;
+	top: 2%;
+	left: 1%;
+	color: #fff;
+	text-align: left;
+	z-index: 99;
+	margin: 1rem;	
+	width: auto;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+	font-weight:800px;
+	font-size: 0.9rem;
+}
+
+#carousel-home .absolute-div {
+	position: absolute;
+	top: 30%;
+	left: 5%;
+	color: white;
+	text-align: left;
+	z-index: 100;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	width: auto;
+}
+#carousel-home h1 {
+	position:relative;
+    font-size: 3.5rem;
+	font-family:  "Arial Narrow", "Arial";
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+	background: rgba(0, 0, 0, 0.4); /* optional dark background for readability */
+	font-weight: 700;
+	font-style: italic;
+	padding:5px;
+}
+#carousel-home h2 {
+	position:relative;
+    font-size: 4rem;
+	font-family:  "Arial Narrow", "Arial";
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+	background: rgba(0, 0, 0, 0.4); /* optional dark background for readability */
+	font-weight: 700;
+	font-style: italic;
+	padding:5px;
+}
+#carousel-home p {
+	position:relative;
+    font-size: 1.4rem;
+	font-family:  "Arial Narrow", "Arial";
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+	background: rgba(0, 0, 0, 0.4); /* optional dark background for readability */
+	font-weight: 500;
+	font-style: italic;
+	padding: 5px;
+	width: fit-content;
+}
+#carousel-home .button {
+	padding-top:20px;
+}
+#carousel-home .button-link {
+	font-size: .9rem;
+	font-family:  "Arial Narrow", "Arial";
+	background: var(--brand-color-1);
+	font-weight: 500;
+	font-style: italic;
+	padding:15px;
+	color: #fff;
+	z-index: 110;
+	position: relative;
+	pointer-events: auto;
+	margin: 20px 20px 0 0;
+}
+#carousel-home .button-link:hover {
+	padding-bottom:20px;
+	text-decoration: none;
+}
+#carousel-home .icon {
+	padding-left: 10px;	
+}
+
+#our-services{
 	border-top: 1px solid var(--brand-color-7);
 	border-bottom: 1px solid var(--brand-color-7);
 	background-image: url("../img/bak-1.jpg");
   	background-size: cover;
 }
-#stats-row .stats-icon{
+#our-services .stats-icon{
 	padding: 0 10px 5px 0;
 	color : var(--brand-color-1)
 }
 
-#stats-row .title{
+#our-services .title{
 	font-size :1.3rem;
 }
+
+#our-services h3{
+	font-family: "Dynalight", "Comic Sans", cursive;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
 
 #offer{
 	border-bottom: 0px solid var(--brand-color-2);	
