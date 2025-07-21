@@ -14,7 +14,7 @@
 body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
     /* Optional: Also consider setting max-width to 100% for images/videos */
-    img, video, iframe {
+    img, video {
         max-width: 100%;
         height: auto;
     }
@@ -62,6 +62,25 @@ a:hover {
 h5{
 	font-size: 1.2rem;
 }
+
+.button-link {
+	font-size: .9rem;
+	font-family:  "Arial Narrow", "Arial";
+	background: var(--brand-color-1);
+	font-weight: 500;
+	font-style: italic;
+	padding:15px;
+	color: #fff;
+	z-index: 110;
+	position: relative;
+	pointer-events: auto;
+	margin: 20px 20px 0 0;
+}
+.button-link:hover {
+	padding-bottom:20px;
+	text-decoration: none;
+}
+
 /** COMMON - END **/
 
 /** HEADER - START **/
@@ -91,47 +110,22 @@ h5{
 #top-bar a{
 	color: var(--brand-color-1);
 }
-#top-bar .social-col a:hover{
-	color: var(--brand-color-7);
-}
+
 #top-bar .col-logo{
-	max-width: 110px;
+	max-width: 100px;
 }
 
 #top-bar .collapse .nav-item{
 	padding: 0 12px;
 }
-
-#header-bar .contact-icon{
-	max-width: 35px;
-	padding: 5px 6px 0 0;
-}
-
 #navbarSupportedContent{
 	max-width:800px;	
-}
-
-#header-bar .site-title{
-	color:	var(--brand-color-1);
-	font-size: 2rem;
-	font-family: "Georama", "Comic Sans", cursive;
-	font-weight:500;
-}
-#header-bar .title{
-	color:	var(--brand-color-6);
-	font-size: .8rem
-}
-#header-bar .content{
-	font-size:1rem;
-	font-weight: 600;
 }
 
 /** HEADER - END **/
 
 
 /** HOME PAGE - START **/
-
-
 .container-carousel{ 
 	width:100%;
 	background-color: var(--brand-color-9);
@@ -154,11 +148,7 @@ h5{
     display:table;
     width:100%;
     height:100%;
-	
 }
-
-
-
 #carousel-home .carousel-item {
     position:relative;
 	height:95%;
@@ -223,7 +213,7 @@ h5{
 
 #carousel-home .absolute-div {
 	position: absolute;
-	top: 30%;
+	top: 24%;
 	left: 5%;
 	color: white;
 	text-align: left;
@@ -234,7 +224,7 @@ h5{
 }
 #carousel-home h1 {
 	position:relative;
-    font-size: 3.5rem;
+    font-size: 3rem;
 	font-family:  "Arial Narrow", "Arial";
 	text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
 	background: rgba(0, 0, 0, 0.4); /* optional dark background for readability */
@@ -244,7 +234,7 @@ h5{
 }
 #carousel-home h2 {
 	position:relative;
-    font-size: 4rem;
+    font-size: 3rem;
 	font-family:  "Arial Narrow", "Arial";
 	text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
 	background: rgba(0, 0, 0, 0.4); /* optional dark background for readability */
@@ -266,32 +256,13 @@ h5{
 #carousel-home .button {
 	padding-top:20px;
 }
-#carousel-home .button-link {
-	font-size: .9rem;
-	font-family:  "Arial Narrow", "Arial";
-	background: var(--brand-color-1);
-	font-weight: 500;
-	font-style: italic;
-	padding:15px;
-	color: #fff;
-	z-index: 110;
-	position: relative;
-	pointer-events: auto;
-	margin: 20px 20px 0 0;
-}
-#carousel-home .button-link:hover {
-	padding-bottom:20px;
-	text-decoration: none;
-}
+
 #carousel-home .icon {
 	padding-left: 10px;	
 }
 
-#our-services{
-	border-top: 1px solid var(--brand-color-7);
-	border-bottom: 1px solid var(--brand-color-7);
-	background-image: url("../img/bak-1.jpg");
-  	background-size: cover;
+#our-services .col{
+
 }
 #our-services .stats-icon{
 	padding: 0 10px 5px 0;
@@ -308,73 +279,96 @@ h5{
     font-weight: 500;
 }
 
-
-
-#offer{
-	border-bottom: 0px solid var(--brand-color-2);	
-	border-left: 0px solid var(--brand-color-2);	
-	border-right: 0px solid var(--brand-color-2);
-	border-radius: 0px;
-	border-top: 2px solid var(--brand-color-7);
+#res-menu{
+	border-top: 1px solid var(--brand-color-7);
+	border-bottom: 1px solid var(--brand-color-7);
+	background-image: url("../img/bak-1.jpg");
+  	background-size: cover;
 }
-#offer h3{
+#res-menu h3{
+	font-family: "Dynalight", "Comic Sans", cursive;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+#res-menu p{
+	font-family: "Arial";
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+#pavi-offer {
+
+}
+#pavi-offer h3{
 	color: var(--brand-color-1);
 	font-family: "Dynalight", "Comic Sans", cursive;
 	font-size: 2.5rem;
 	font-weight: 500;	
 }
-#offer h4{
+#pavi-offer h4{
 	font-family: "Dynalight", "Comic Sans", cursive;
 	font-size: 2.2rem;
 	font-weight: 500;
 }
-#offer .btn{
+#pavi-offer .btn{
 	background-color: var(--brand-color-1);
 	border: 0px solid var(--brand-color-2);
 	border-radius: 20px;
 }
-#offer .events img{
+#pavi-offer .events img{
 	    border-top-left-radius: 0px;
     border-top-right-radius: 60px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 60px;
 }
-#offer .corporate{
-	background-color: #FDF5E5;
-	padding:15px;
+#pavi-offer .corporate{
+	/*background-color: #fefbf3;
+	border-left:1pt solid var(--brand-color-1);
+	border-right:1pt solid var(--brand-color-1);
+	padding:15px;*/
+	background-image: url("../img/bak-blue.webp");
+	background-size: cover;
 }
-#offer .private{
-	background-color: #FEDCC0;	
+#pavi-offer .private{
+	/*background-color: #FEDCC0;
+	border-right:1pt solid var(--brand-color-1);*/	
+		background-image: url("../img/bak-yellow.webp");
+	background-size: cover;
 }
-#offer .social{
-	background-color: #B9D7DA;	
+#pavi-offer .social{
+	/*background-color: #fefbf3;
+	border-right:1pt solid var(--brand-color-1);*/	
+		background-image: url("../img/bak-green.webp");
+	background-size: cover;
 }
-#offer .pic{
+#pavi-offer .pic{
 	margin-bottom: 15px;
 }
-#offer li {
+#pavi-offer li {
 	font-family: "Georama";
 	letter-spacing: .05rem;
 	font-weight:500;
 }
 
-#partners .title{
-	max-width: 180px;
+#socials .socials{
+	border-top: 1px solid var(--brand-color-7);
 }
-
-#partners h3{
+#socials h3{
 	font-family: "Dynalight", "Comic Sans", cursive;
 	font-size: 2.2rem;
 	font-weight: 500;
 	color: var(--brand-color-1);
 }
-
-#partners hr{
-	border: none; 
-    height: 2px; 
-    background-color: var(--brand-color-1);
-    margin: 20px 0; 
+#socials .tag{
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #666;
 }
+#socials .col{
+	max-width: 50px;
+}
+
 .image-hover-effect img {
     /* Initially apply grayscale filter */
     filter: grayscale(100%);
@@ -440,15 +434,11 @@ font-family: "Dynalight", "Comic Sans", cursive;
 /** INNER PAGES - END **/
 
 /** FOOTER - START **/
-footer{
-	padding: 0 12px;
-}
 #footer-menu-bar {
-	background-color: var(--brand-color-5);	
-	border-radius: 6px 6px 0px 0px;
+	background-color: var(--brand-color-5);
 }
 #footer-menu-bar .col{	
-	padding: 10px 25px;
+	padding: 10px;
 }
 #footer-menu-bar .about{
 	text-align: center;
@@ -466,35 +456,5 @@ padding: 10px 5px;
 	font-size: .9rem;
 } 
 /** FOOTER - END **/
-
-
-/** SIDE BAR - START **/
-body{
-	position: relative; /* required */
-}
-  
-/* Custom style to stick list group on top */
-.list-group{
-    position: sticky;
-    top: 15px;
-}
-.list-group-item {
-    padding: 0.4rem .5rem;
-}
-/** SDIE BAR - END **/
-
-
-/** GOOGLE ADS - START **/
-.sideBarAds{ padding: 10px 0; text-align:center;}
-
-
-/** GOOGLE ADS - END **/
-
-/** FAQs - START **/
-.faq-div { padding: 30px 40px;}
-.faq-q { font-weight:600; font-size: 1.3rem; margin-top: 30px;} 
-.faq-a { font-size: 1rem; margin-bottom: 10px; padding: 2px 12px;}
-
-/** FAQs - END **/
 
 

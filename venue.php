@@ -1,15 +1,78 @@
 <?php
-$html_title = "About Namaste Pavilion Restaurant, Scarborough";
+$html_title = "Event Venue at Namaste Pavilion Restaurant, Scarborough";
 include_once('header.php'); ?>
 <div class="container container-inner-banner">
-<img src="img/inner_banner1.jpg" alt="About Us Banner" class="d-block" style="width:100%">
+<img src="img/inner_banner2.jpg" alt="About Us Banner" class="d-block" style="width:100%">
 </div>
 <div class="container container-inner-main">
 
-<h1 class="page-h1">About Namaste Pavilion Restaurant</h1>
+<h1 class="page-h1">Namaste Pavilion - Event Venue</h1>
+
 <p>Welcome to Namaste, Toronto's premier destination for exceptional dining and unforgettable events. Located at <strong>4438 Sheppard Ave East, right at the vibrant intersection of Brimley and Sheppard</strong>, we're thrilled to offer a dynamic venue designed to host your most cherished moments.</p>
-<p>Namaste Pavilion isn't just a restaurant; it's a versatile destination for dining and events. Enjoy authentic Nepalese, Indian, and Indo-Chinese cuisine, including a popular lunch buffet. Our adaptable event spaces, professional catering, and state-of-the-art A/V make us the perfect choice for corporate events, weddings, and social gatherings, all complemented by ample free parking.</p>
-<br/>
+<p>At Namaste, we believe every gathering deserves a perfect setting. That's why we've created a versatile space that seamlessly blends sophisticated design with practical amenities. Whether you're planning an intimate celebration or a grand affair, our newly renovated venue provides the ideal backdrop.</p>
+<!-- Event Starts -->
+<div id="pavi-offer"
+	class="pt-5 mb-4 offer d-flex justify-content-center">
+	<div class="row container">
+		<div class="col events">
+			<h3 class="p-4 mb-0 text-center">Our Pavilion Restaurant offers an
+				perfect setting and dedicated service for</h3>
+			<div class="row">
+				<div class="col col-offer corporate p-4 fade-out-up-element">
+					<span class="for">your</span>
+					<h4>Corporate</h4>
+					<img src="img/offer_business.jpg" alt="Corporate Event"
+						class="d-block pic transform" style="width: 100%">
+					<ul>
+						<li>Business Meeting</li>
+						<li>AGM</li>
+						<li>Christmas or Holidays</li>
+						<li>Retirement Parties</li>
+						<li>Award Ceremonies</li>
+						<li>Industry Seminars & Workshops</li>
+						<li>Athletic Club Dinner</li>
+
+					</ul>
+				</div>
+				<div class="col col-offer private p-4">
+					<span class="for">your</span>
+					<h4>Private Events</h4>
+					<img src="img/offer_private.jpg" alt="Private Event"
+						class="d-block pic transform2" style="width: 100%">
+					<ul>
+						<li>Baby Shower</li>
+						<li>Gender reveal</li>
+						<li>Weaning / Rice Feeding</li>
+						<li>Birthdays</li>
+						<li>Bratabandha</li>
+						<li>Gunyo Cholo / Ihi</li>
+						<li>Sweet 16</li>
+						<li>Proms and Semi-Formals</li>
+						<li>Engagement & Wedding</li>
+					</ul>
+				</div>
+				<div class="col col-offer social p-4">
+					<span class="for">your</span>
+					<h4>Social Events</h4>
+					<img src="img/offer_social.jpg" alt="Social Event"
+						class="d-block pic transform3" style="width: 100%">
+					<ul>
+						<li>Musical Events</li>
+						<li>Concerts / Live Music Events</li>
+						<li>Cultural Celebrations</li>
+						<li>Dances / Balls</li>
+						<li>Community Festivals/Fairs</li>
+						<li>Meet and Greet</li>
+						<li>Charity Galas</li>
+						<li>and many more</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- Event Ends -->
 <hr class="hr-about-us" />
 <h2 class="page-h2">Your Event, Our Expertise</h2>
 <p>Planning an event can be overwhelming, but with Namaste, it doesn't have to be. We're here to help you <strong>create moments that truly matter</strong>. Our dedicated team and flexible facilities are tailored to bring your vision to life.</p>
@@ -25,6 +88,21 @@ include_once('header.php'); ?>
 <h2 class="page-h2">Experience the Difference</h2>
 <p >Namaste Pavilion Restaurant is more than just a venue; it's a partner in crafting memorable experiences. We're committed to providing personalized service and exceptional quality, ensuring every detail is handled with care.</p>
 <p ><strong>Let us set the stage for your next memorable event.</strong> Contact us today to explore our offerings and discover how we can help you create moments that will be cherished for a lifetime.</p>
+<br/>
+<hr class="hr-about-us"/>
+<h2 class="page-h2">Facilities</h2>
+
+<ul>
+<li>Free Parking for all guests</li>
+<li>Decoration</li>
+<li>Sound System</li>
+<li>Security till mid night</li>
+<li>Artist Change Room</li>
+<li>On-Site Kitchen</li>
+<li>Projector and Screen for presentation</li>
+<li>Bar and Buffet Station</li>
+<li>Alcohol license until 2:00 am</li>
+</ul>
 <br/>
 <br/>
 </div>

@@ -1,7 +1,12 @@
 <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Namaste Event Centre | Scarborough </title>
+<?php 
+if(!isset($html_title)){
+    $html_title = "Namaste Pavilion Restaurant | Event Venue in Scarborough";
+}
+?>
+<title><?php echo $html_title; ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -9,14 +14,14 @@
 <link rel="canonical" href="" /> 
 <meta property="og:url" content="">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Namaste Event Centre | Scarborough ">
-<meta property="og:site_name" content="Namaste Event Centre ">
+<meta property="og:title" content="N<?php echo $html_title; ?>">
+<meta property="og:site_name" content="Namaste Pavilion Restaurant">
 <meta property="og:description" content="">
 <meta property="og:image" content="">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:domain" content="">
 <meta name="twitter:url" content="">
-<meta name="twitter:title" content="Namaste Event Centre">
+<meta name="twitter:title" content="<?php echo $html_title; ?>">
 <meta name="twitter:description" />
 <meta name="twitter:image" content="">
 <!-- Le styles -->
@@ -34,7 +39,7 @@
 {
     "@context" : "https://schema.org",
     "@type" : "WebSite",
-    "name" : "Namaste Event Centre",    
+    "name" : "Namaste Pavilion Restaurant",    
     "url" : ""
 }
 </script>
@@ -42,7 +47,7 @@
 <body>
 
 <div class="container-top-bar sticky-top shadow">
-<nav id="top-bar" class="navbar navbar-expand-lg navbar-dark container">
+<nav id="top-bar" class="navbar navbar-expand-lg navbar-light container">
   <div class="container-fluid">    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -61,16 +66,16 @@
           <a class="nav-link" href="about">ABOUT US</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="packages">RESTAURANT MENU</a>
+          <a class="nav-link" href="menu">RESTAURANT MENU</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="catering">EVENT CENTER</a>
+          <a class="nav-link" href="venue">EVENT VENUE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="facilities">BUFFET</a>
+          <a class="nav-link" href="buffet">BUFFET</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="facilities">CATERING</a>
+          <a class="nav-link" href="catering">CATERING</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="contact">CONTACT US</a>

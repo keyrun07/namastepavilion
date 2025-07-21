@@ -1,36 +1,37 @@
-<?php include_once('header.php'); ?>
+<?php
+$html_title = "Contact Us | Namaste Pavilion Restaurant, Scarborough";
+include_once('header.php'); ?>
  <style>
-
-        .contact-form-container {
-            max-width: 800px; /* Limit form width for better readability */
-            margin: 50px auto; /* Center the container on the page */
-            padding: 30px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-        .contact-form-container h2 {
-            margin-bottom: 30px;
-            color: #343a40;
-            text-align: center;
-        }
-        .form-label {
-            font-weight: 500;
-            color: #495057;
-        }
-        .btn-primary {
-            background-color: var(--brand-color-1); /* A purple tone, perhaps matching Namaste theme */
-            border-color: var(--brand-color-1);
-            transition: background-color 0.3s ease, border-color 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: var(--brand-color-5); /* Slightly darker on hover */
-            border-color: var(--brand-color-5);
-        }
-        textarea {
-            resize: vertical; /* Allow vertical resizing of the comment box */
-        }
-    </style>
+    .contact-form-container {
+        max-width: 800px; /* Limit form width for better readability */
+        margin: 50px auto; /* Center the container on the page */
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .contact-form-container h2 {
+        margin-bottom: 30px;
+        color: #343a40;
+        text-align: center;
+    }
+    .form-label {
+        font-weight: 500;
+        color: #495057;
+    }
+    .btn-primary {
+        background-color: var(--brand-color-1); /* A purple tone, perhaps matching Namaste theme */
+        border-color: var(--brand-color-1);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    .btn-primary:hover {
+        background-color: var(--brand-color-5); /* Slightly darker on hover */
+        border-color: var(--brand-color-5);
+    }
+    textarea {
+        resize: vertical; /* Allow vertical resizing of the comment box */
+    }
+</style>
 <div class="container container-inner-banner">
 <img src="img/inner_banner1.jpg" alt="About Us Banner" class="d-block" style="width:100%">
 </div>
@@ -38,7 +39,7 @@
 
 <h1 class="page-h1">Contact Us</h1>
 <div class="container contact-form-container">
-        <h2>Contact Namaste Restaurant & Event Centre</h2>
+        <h2>Contact Namaste Pavilion Restaurant</h2>
         <p class="text-center mb-4">We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
 
         <form action="#" method="POST"> <div class="row mb-3">
