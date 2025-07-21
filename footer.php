@@ -140,7 +140,7 @@
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2055.6399090170626!2d-79.2699440158558!3d43.787968366419555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d1efee68269d%3A0x112ca8f6fc7b40d0!2sNamaste%20Pavalion%20Restaurant!5e0!3m2!1sen!2sca!4v1752551574587!5m2!1sen!2sca"
 					width="100%" height="330" style="border: 0;" allowfullscreen=""
-					loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map"></iframe>
 			</div>
 		</div>
 	</div>
@@ -155,7 +155,7 @@
 				</p>
 			</div>
 			<div class="col text-end">
-				<a class="link-light" href="terms">Terms & Conditions</a> &nbsp; &nbsp; <a
+				<a class="link-light" href="terms">Terms & Conditions</a> &nbsp; | &nbsp; <a
 					class="link-light " href="privacy">Privacy Policy</a>
 			</div>
 		</div>
