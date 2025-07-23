@@ -8,7 +8,7 @@ if(!isset($html_title)){
 ?>
 <title><?php echo $html_title; ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Namaste Pavilion is a versatile destination for dining and events. Enjoy authentic Nepalese, Indian, and Indo-Chinese cuisine, including a popular lunch buffet.">
+<meta name="description" content="Namaste Restaurant pavilion is a versatile destination for authentic Nepalese, Indian, & Indo-Chinese dining (with lunch buffet) & a premier event venue in Scarborough.">
 <meta name="keywords" content="Restaurant in Scarborough, Event Venue in Toronto, GTA, Authentic Nepalese, Indian, and Indo-Chinese cuisine, Banquet Hall, Dining, Lunch Buffet, Social, Private Event Venue, Pavilion Restaurant, Taste of Nepal">
 <meta name="robots" content="index" />
 <link rel="canonical" href="" /> 
@@ -16,7 +16,7 @@ if(!isset($html_title)){
 <meta property="og:type" content="website">
 <meta property="og:title" content="N<?php echo $html_title; ?>">
 <meta property="og:site_name" content="Namaste Pavilion Restaurant">
-<meta property="og:description" content="Namaste Pavilion is a versatile destination for dining and events. Enjoy authentic Nepalese, Indian, and Indo-Chinese cuisine, including a popular lunch buffet.">
+<meta property="og:description" content="Namaste Restaurant pavilion is a versatile destination for authentic Nepalese, Indian, & Indo-Chinese dining (with lunch buffet) & a premier event venue in Scarborough.">
 <meta property="og:image" content="https://www.namastepavilion.ca/img/title.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:domain" content="https://www.namastepavilion.ca/">
@@ -54,8 +54,7 @@ if(!isset($html_title)){
     </button>
   
 <div id="" class="row">
-<div class="col col-logo"><img src="img/logo.png" width="" height="60"  title="Logo" alt="logo"></div>
-<div class="col col-title"><a href="/"><img src="img/title.png" width="" height="50"  title="Namaste Pavilion Restaurant" alt="Namaste Pavilion Restaurant"></a></div>
+<div class="col col-title p-1"><a href="/"><img src="img/logo-title.webp" width="" height="60"  title="Namaste Pavilion Restaurant" alt="Namaste Pavilion Restaurant"></a></div>
 </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -79,6 +78,18 @@ if(!isset($html_title)){
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="contact">CONTACT US</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.foodbooking.com/api/fb/qd_x_gg" class="button-link"> <span class="label">
+								Online Order <span class="icon"> <svg class="bookNow"
+										fill="currentColor" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24">
+<path fill="currentColor"
+											d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
+							</span>
+						</span>
+						</a>
         </li>
       </ul>
     </div>

@@ -147,14 +147,14 @@
 	<div id="footer-menu-copyright"
 		class="p-2 d-flex justify-content-center">
 		<div class="row container">
-			<div class="col text-left">
+			<div class="col text-left p-0">
 				<p class="mb-0 lh-lg">
 					&copy; 2025 <a href="https://NamastePavilion.ca/"
 						class="link-light text-decoration-underline fw-bolder">NamastePavilion.ca</a>
 					- Namaste Hospitality Group
 				</p>
 			</div>
-			<div class="col text-end">
+			<div class="col text-center text-sm-end p-0">
 				<a class="link-light" href="terms">Terms & Conditions</a> &nbsp; | &nbsp; <a
 					class="link-light " href="privacy">Privacy Policy</a>
 			</div>

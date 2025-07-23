@@ -42,7 +42,7 @@
 				<img src="img/banner-rest-1.webp" alt="Namaste Pavilion Restaurant"
 					class="d-block" style="width: 100%"> </picture>
 				<div class="absolute-div">
-					<h2>Dine-in Restaurant</h2>
+					<h2>Dine-in Restaurant in Scarborough</h2>
 					<p>A fusion of Nepalese, Chinese, and Indian flavors</p>
 
 
@@ -55,7 +55,7 @@
 											d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
 							</span>
 						</span>
-						</a> <a href="contact" class="button-link"> <span class="label">
+						</a> <a href="https://www.foodbooking.com/api/fb/qd_x_gg" class="button-link"> <span class="label">
 								Online Order <span class="icon"> <svg class="bookNow"
 										fill="currentColor" version="1.1"
 										xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -262,16 +262,25 @@
 				Chinese, and Indian cuisines at our restaurant, offering everything
 				from appetizers to main dishes, sides, sweets, and beverages.</p>
 			<div class="button">
-				<a href="event" class="button-link"> <span class="label"> SEE OUR
-						MENU <span class="icon"> <svg class="bookNow" fill="currentColor"
-								version="1.1" xmlns="http://www.w3.org/2000/svg" width="16"
-								height="16" viewBox="0 0 24 24">
+						<a href="menu" class="button-link"> <span class="label"> See Menu
+								<span class="icon"> <svg class="bookNow" fill="currentColor"
+										version="1.1" xmlns="http://www.w3.org/2000/svg" width="16"
+										height="16" viewBox="0 0 24 24">
 <path fill="currentColor"
-									d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
-					</span>
-				</span>
-				</a>
-			</div>
+											d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
+							</span>
+						</span>
+						</a> <a href="https://www.foodbooking.com/api/fb/qd_x_gg" class="button-link"> <span class="label">
+								Online Order <span class="icon"> <svg class="bookNow"
+										fill="currentColor" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24">
+<path fill="currentColor"
+											d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
+							</span>
+						</span>
+						</a>
+					</div>
 
 		</div>
 		<div class="col col-sm-7 pt-5 pb-5 ">

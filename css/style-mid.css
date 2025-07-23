@@ -49,5 +49,6 @@
 
 	#footer-menu-bar .col-sm-6 {min-width: 100%;}
 	#footer-menu-bar .col-sm-3 {min-width: 100%;}
+	#footer-menu-copyright .col {text-align: center;}
 
 }
