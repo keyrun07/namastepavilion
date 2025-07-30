@@ -98,8 +98,7 @@
 								<polyline points="48.75 25.89 37.12 25.57 37.43 13.94" />
 								<line x1="37.11" y1="25.57" x2="53.34" y2="10.21" />
 </svg></td>
-						<td class="text"><a href="tel:+6477160666">+647-716-0666</a><br />
-							<a href="tel:+6475648820">+647-564-8820</a></td>
+						<td class="text"><a href="tel:+6473294255">+647-329-4255</a></td>
 					</tr>
 					<tr>
 						<td><svg width="32" height="32" viewBox="0 0 24 24" fill="none"

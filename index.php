@@ -55,7 +55,9 @@
 											d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
 							</span>
 						</span>
-						</a> <a href="https://www.foodbooking.com/api/fb/qd_x_gg" target="_blank" class="button-link"> <span class="label">
+						</a> 
+						<?php if(isset($show_online_order) && ($show_online_order == true)){?>
+						<a href="https://www.foodbooking.com/api/fb/qd_x_gg" target="_blank" class="button-link"> <span class="label">
 								Online Order <span class="icon"> <svg class="bookNow"
 										fill="currentColor" version="1.1"
 										xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -65,6 +67,7 @@
 							</span>
 						</span>
 						</a>
+						<?php } ?>
 					</div>
 
 
@@ -270,7 +273,9 @@
 											d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
 							</span>
 						</span>
-						</a> <a href="https://www.foodbooking.com/api/fb/qd_x_gg" target="_blank" class="button-link"> <span class="label">
+						</a>
+						<?php if(isset($show_online_order) && ($show_online_order == true)){?> 
+						<a href="https://www.foodbooking.com/api/fb/qd_x_gg" target="_blank" class="button-link"> <span class="label">
 								Online Order <span class="icon"> <svg class="bookNow"
 										fill="currentColor" version="1.1"
 										xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -280,6 +285,7 @@
 							</span>
 						</span>
 						</a>
+						<?php } ?>
 					</div>
 
 		</div>

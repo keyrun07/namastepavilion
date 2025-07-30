@@ -1,3 +1,4 @@
+<?php include("setting.php");?>
 <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="utf-8">
@@ -14,7 +15,7 @@ if(!isset($html_title)){
 <link rel="canonical" href="" /> 
 <meta property="og:url" content="https://www.namastepavilion.ca/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="N<?php echo $html_title; ?>">
+<meta property="og:title" content="<?php echo $html_title; ?>">
 <meta property="og:site_name" content="Namaste Pavilion Restaurant">
 <meta property="og:description" content="Namaste Restaurant pavilion is a versatile destination for authentic Nepalese, Indian, & Indo-Chinese dining (with lunch buffet) & a premier event venue in Scarborough.">
 <meta property="og:image" content="https://www.namastepavilion.ca/img/title.png">
@@ -79,6 +80,7 @@ if(!isset($html_title)){
 		<li class="nav-item">
           <a class="nav-link" href="contact">CONTACT US</a>
         </li>
+        <?php if(isset($show_online_order) && ($show_online_order == true)){?>
         <li class="nav-item">
           <a href="https://www.foodbooking.com/api/fb/qd_x_gg" class="button-link"> <span class="label">
 								Online Order <span class="icon"> <svg class="bookNow"
@@ -91,6 +93,7 @@ if(!isset($html_title)){
 						</span>
 						</a>
         </li>
+        <?php } ?>
       </ul>
     </div>
   </div>
