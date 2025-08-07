@@ -151,7 +151,7 @@ h5{
 
 #carousel-home .carousel-caption {
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     display:table;
     width:100%;
     height:100%;
@@ -174,7 +174,7 @@ h5{
 	left: auto;
 	bottom: auto;
 	position: absolute;
-	z-index: 2;
+	z-index: 9;
 	padding-top: .5rem;
 	opacity: .9;
     transition: opacity .1s ease;
@@ -195,7 +195,7 @@ h5{
 	left: 0;
 	margin: 0;
 	padding: 0.5rem;
-	z-index: 2;
+	z-index: 9;
 	justify-content: flex-start;
 	height: 50px;
 }
@@ -301,6 +301,9 @@ h5{
 	font-family: "Arial";
     font-size: 1.2rem;
     font-weight: 500;
+}
+#res-menu-gallery{	
+	border-bottom: 1px solid var(--brand-color-7);
 }
 
 
@@ -466,5 +469,6 @@ padding: 10px 5px;
 		min-width:380px;
 } 
 /** FOOTER - END **/
-
-
+#menu-container .menu-pic{
+		max-width: 100%;
+}

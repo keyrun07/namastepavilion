@@ -56,13 +56,18 @@ include_once('header.php'); ?>
 </style>
 
 <div id="menu-container" class="row">
-<img src="img/menu-1.webp" class="pb-2">
-<img src="img/menu-2.webp" class="pb-2">
-<img src="img/menu-3.webp" class="pb-2">
-<img src="img/menu-4.webp" class="pb-2">
-<img src="img/menu-5.webp" class="pb-2">
-<img src="img/menu-6.webp" class="pb-2">
+<img src="img/menu/menu-1.png" class="menu-pic pb-2">
+<img src="img/menu/menu-2.png" class="menu-pic pb-2">
+<img src="img/menu/menu-3.png" class="menu-pic pb-2">
+<img src="img/menu/menu-4.png" class="menu-pic pb-2">
+<img src="img/menu/menu-5.png" class="menu-pic pb-2">
+<img src="img/menu/menu-6.png" class="menu-pic pb-2">
 </div>
+<!--  Food Gallery Start  -->
+<div id="res-menu-gallery" class="d-flex justify-content-center">
+<?php include_once('menu_gallery.php'); ?>
+</div>
+<!--  Food Gallery End  -->
 <div>
 <?php if(isset($show_online_order) && ($show_online_order == true)){?>
 <a href="https://www.foodbooking.com/api/fb/qd_x_gg" target="_blank" class="button-link"> <span class="label">

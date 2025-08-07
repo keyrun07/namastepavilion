@@ -298,7 +298,11 @@
 	</div>
 </div>
 <!-- Our Restaurant End -->
-
+<!--  Food Gallery Start  -->
+<div id="res-menu-gallery" class="d-flex justify-content-center">
+<?php include_once('menu_gallery.php'); ?>
+</div>
+<!--  Food Gallery End  -->
 <!-- Event Starts -->
 <div id="pavi-offer"
 	class="pt-5 mb-4 offer d-flex justify-content-center">
