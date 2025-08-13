@@ -64,7 +64,7 @@ include_once('header.php'); ?>
 <img src="img/menu/menu-6.png" class="menu-pic pb-2">
 </div>
 <!--  Food Gallery Start  -->
-<div id="res-menu-gallery" class="d-flex justify-content-center">
+<div class="d-flex justify-content-center">
 <?php include_once('menu_gallery.php'); ?>
 </div>
 <!--  Food Gallery End  -->

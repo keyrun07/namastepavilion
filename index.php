@@ -101,6 +101,7 @@
 
 				</div>
 			</div>
+			<!-- 
 			<div class="carousel-item">
 				<picture>
 				<source media="(max-width:650px)"
@@ -127,6 +128,7 @@
 
 				</div>
 			</div>
+			 -->
 			<div class="carousel-item">
 				<picture>
 				<source media="(max-width:650px)"
@@ -169,10 +171,12 @@
 				data-bs-slide-to="2"></button>
 			<button type="button" data-bs-target="#carousel-home"
 				data-bs-slide-to="3"></button>
+				<!-- 
 			<button type="button" data-bs-target="#carousel-home"
 				data-bs-slide-to="4"></button>
+				 -->
 		</div>
-		<div class="slide-counter">1 - 5</div>
+		<div class="slide-counter">1 - 4</div>
 
 		<!-- Left and right controls/icons -->
 		<button class="carousel-control-prev top-right" type="button"

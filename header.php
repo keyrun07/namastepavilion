@@ -71,8 +71,12 @@ if(!isset($html_title)){
 		<li class="nav-item">
           <a class="nav-link" href="venue">EVENT VENUE</a>
         </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a class="nav-link" href="buffet">BUFFET</a>
+        </li>
+         -->
+         <li class="nav-item">
+          <a class="nav-link" href="events">EVENTS</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="catering">CATERING</a>

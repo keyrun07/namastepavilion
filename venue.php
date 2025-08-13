@@ -7,12 +7,73 @@ include_once('header.php'); ?>
 <div class="container container-inner-main">
 
 <h1 class="page-h1">Namaste Pavilion - Event Venue</h1>
-
-<p>Welcome to Namaste, Toronto's premier destination for exceptional dining and unforgettable events. Located at <strong>4438 Sheppard Ave East, right at the vibrant intersection of Brimley and Sheppard</strong>, we're thrilled to offer a dynamic venue designed to host your most cherished moments.</p>
 <p>At Namaste, we believe every gathering deserves a perfect setting. That's why we've created a versatile space that seamlessly blends sophisticated design with practical amenities. Whether you're planning an intimate celebration or a grand affair, our newly renovated venue provides the ideal backdrop.</p>
+
 <!-- Event Starts -->
-<div id="pavi-offer"
-	class="pt-5 mb-4 offer d-flex justify-content-center">
+<div id="pavi-offer" class="pt-5 mb-4 offer d-flex justify-content-center">
+	<div class="row container">
+		<div class="col events">
+			<h3 class="p-4 mb-0 text-center">Our Pavilions For Your Next Event</h3>
+			<div class="row">
+				<div class="col col-offer corporate p-4 fade-out-up-element">					
+					<h4>Pavilion A</h4>
+					<img src="img/offer_business.jpg" alt="Corporate Event"
+						class="d-block pic transform" style="width: 100%">
+					<ul>
+						<li>Business Meeting</li>
+						<li>AGM</li>
+						<li>Christmas or Holidays</li>
+						<li>Retirement Parties</li>
+						<li>Award Ceremonies</li>
+						<li>Industry Seminars & Workshops</li>
+						<li>Athletic Club Dinner</li>
+
+					</ul>
+				</div>
+				<div class="col col-offer private p-4">
+					<h4>Pavilion B</h4>
+					<img src="img/offer_private.jpg" alt="Private Event"
+						class="d-block pic transform2" style="width: 100%">
+					<ul>
+						<li>Baby Shower</li>
+						<li>Gender reveal</li>
+						<li>Weaning / Rice Feeding</li>
+						<li>Birthdays</li>
+						<li>Bratabandha</li>
+						<li>Gunyo Cholo / Ihi</li>
+						<li>Sweet 16</li>
+						<li>Proms and Semi-Formals</li>
+						<li>Engagement & Wedding</li>
+					</ul>
+				</div>
+				<div class="col col-offer social p-4">
+					<h4>Pavilion C</h4>
+					<img src="img/offer_social.jpg" alt="Social Event"
+						class="d-block pic transform3" style="width: 100%">
+					<ul>
+						<li>Musical Events</li>
+						<li>Concerts / Live Music Events</li>
+						<li>Cultural Celebrations</li>
+						<li>Dances / Balls</li>
+						<li>Community Festivals/Fairs</li>
+						<li>Meet and Greet</li>
+						<li>Charity Galas</li>
+						<li>and many more</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- Event Ends -->
+
+
+
+
+
+<!-- Event Starts -->
+<div id="pavi-offer" class="pt-5 mb-4 offer d-flex justify-content-center">
 	<div class="row container">
 		<div class="col events">
 			<h3 class="p-4 mb-0 text-center">Our Pavilion Restaurant offers an
