@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <?php 
 if(!isset($html_title)){
-    $html_title = "Namaste Pavilion Restaurant | Event Venue in Scarborough";
+    $html_title = "Namaste Pavilion Restaurant | 客滿亭  | Event Venue in Scarborough";
 }
 ?>
 <title><?php echo $html_title; ?></title>
@@ -80,6 +80,9 @@ if(!isset($html_title)){
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="catering">CATERING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="careers">CAREERS</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="contact">CONTACT US</a>

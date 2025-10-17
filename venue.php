@@ -9,7 +9,8 @@ include_once('header.php'); ?>
 <h1 class="page-h1">Namaste Pavilion - Event Venue</h1>
 <p>At Namaste, we believe every gathering deserves a perfect setting. That's why we've created a versatile space that seamlessly blends sophisticated design with practical amenities. Whether you're planning an intimate celebration or a grand affair, our newly renovated venue provides the ideal backdrop.</p>
 
-<!-- Event Starts -->
+<!-- Pavilion Starts -->
+<!-- 
 <div id="pavi-offer" class="pt-5 mb-4 offer d-flex justify-content-center">
 	<div class="row container">
 		<div class="col events">
@@ -66,7 +67,8 @@ include_once('header.php'); ?>
 
 	</div>
 </div>
-<!-- Event Ends -->
+ -->
+<!-- Pavilion Ends -->
 
 
 

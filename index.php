@@ -195,7 +195,7 @@
 <div id="our-services" class="d-flex justify-content-center">
 	<div class="row mt-0 mb-5 p-2 container">
 		<h3 class="p-5 mb-0 text-center">Our Services</h3>
-		<div class="col col-sm-3 d-flex justify-content-center">
+		<div class="col col-sm-4 d-flex justify-content-center">
 			<table class="text-center">
 				<tr>
 					<td class="stats-icon"><svg role="img" width="40" height="40"
@@ -209,7 +209,7 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col col-sm-3 d-flex justify-content-center">
+		<div class="col col-sm-4 d-flex justify-content-center">
 			<table class="text-center">
 				<tr>
 					<td class="stats-icon"><svg role="img" width="40" height="40"
@@ -223,7 +223,7 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col col-sm-3 d-flex justify-content-center">
+		<div class="col col-sm-4 d-flex justify-content-center">
 			<table class="text-center">
 				<tr>
 					<td class="stats-icon"><svg role="img" width="40" height="40"
@@ -237,6 +237,7 @@
 				</tr>
 			</table>
 		</div>
+		<!-- 
 		<div class="col col-sm-3 d-flex justify-content-center">
 			<table class="text-center">
 				<tr>
@@ -256,6 +257,7 @@
 				</tr>
 			</table>
 		</div>
+		 -->
 	</div>
 </div>
 <!-- Our Services End -->
