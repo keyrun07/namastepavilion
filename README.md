@@ -1,1 +1,2 @@
-# namastepavilion
+# namastepavilion 
+Namaste Pavilion
