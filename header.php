@@ -73,23 +73,25 @@ if(!isset($html_title)){
         </li>
         <!--<li class="nav-item">
           <a class="nav-link" href="buffet">BUFFET</a>
-        </li>
-         -->
+        </li>         
          <li class="nav-item">
           <a class="nav-link" href="events">EVENTS</a>
         </li>
+        -->
 		<li class="nav-item">
           <a class="nav-link" href="catering">CATERING</a>
         </li>
+        <!-- 
         <li class="nav-item">
           <a class="nav-link" href="careers">CAREERS</a>
         </li>
+         -->
 		<li class="nav-item">
           <a class="nav-link" href="contact">CONTACT US</a>
         </li>
         <?php if(isset($show_online_order) && ($show_online_order == true)){?>
         <li class="nav-item">
-          <a href="https://www.foodbooking.com/api/fb/qd_x_gg" class="button-link"> <span class="label">
+          <a href="https://www.clover.com/online-ordering/namaste-pavilion-toronto" class="button-link"> <span class="label">
 								Online Order <span class="icon"> <svg class="bookNow"
 										fill="currentColor" version="1.1"
 										xmlns="http://www.w3.org/2000/svg" width="16" height="16"

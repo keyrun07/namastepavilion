@@ -1,3 +1,3 @@
 <?php
-$show_online_order=false;
+$show_online_order=true;
 ?>

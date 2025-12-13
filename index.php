@@ -57,7 +57,7 @@
 						</span>
 						</a> 
 						<?php if(isset($show_online_order) && ($show_online_order == true)){?>
-						<a href="https://www.foodbooking.com/api/fb/qd_x_gg" target="_blank" class="button-link"> <span class="label">
+						<a href="https://www.clover.com/online-ordering/namaste-pavilion-toronto" target="_blank" class="button-link"> <span class="label">
 								Online Order <span class="icon"> <svg class="bookNow"
 										fill="currentColor" version="1.1"
 										xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -281,7 +281,7 @@
 						</span>
 						</a>
 						<?php if(isset($show_online_order) && ($show_online_order == true)){?> 
-						<a href="https://www.foodbooking.com/api/fb/qd_x_gg" target="_blank" class="button-link"> <span class="label">
+						<a href="https://www.clover.com/online-ordering/namaste-pavilion-toronto" target="_blank" class="button-link"> <span class="label">
 								Online Order <span class="icon"> <svg class="bookNow"
 										fill="currentColor" version="1.1"
 										xmlns="http://www.w3.org/2000/svg" width="16" height="16"
