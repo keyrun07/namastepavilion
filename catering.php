@@ -7,7 +7,12 @@ include_once('header.php'); ?>
 <div class="container container-inner-main">
 
 <h1 class="page-h1">Catering</h1>
-<p>Information Coming Soon</p>
+<div id="catering-container" class="row d-flex justify-content-center">
+<div>
+<img src="img/catering1.png" class="catering-pic pb-2" width="670">
+<img src="img/catering2.png" class="catering-pic pb-2">
+</div>
+</div>
 <br/>
 </div>
 <?php include_once('footer.php'); ?>

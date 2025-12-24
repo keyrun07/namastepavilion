@@ -3,11 +3,18 @@
 $s=isset($_GET['s'])?$_GET['s']:"nepali";
 $html_title = "Dine-in/Take out Menu of the Namaste Pavilion Restaurant, Scarborough";
 $html_title =($s=="nepali")?"Nepali menu: chicken, mutton, buff momo, thali set in Scarborough":$html_title;
-$html_title =($s=="nepali")?"Indian menu: Tandoori Chicken, Pokora, Tikka in Scarborough":$html_title;
+$html_title =($s=="indian")?"Indian menu: Tandoori Chicken, Pokora, Tikka in Scarborough":$html_title;
 $html_title =($s=="chinese")?"Indo-Chinese menu: Soup, Hakka Noodles in Scarborough":$html_title;
 $html_title =($s=="combo")?"Namaste Combo Lunch Special for $9.99 in Scarborough":$html_title;
 $html_title =($s=="hakka")?"Hakka Menu: Drinks, Soups, Shrimp served with steamed rice in Scarborough":$html_title;
 include_once('header.php'); ?>
+<style>
+.button-link-menu-bar { min-width: 150px;}
+.tbl-menu { margin-bottom: 20px;}
+.tbl-menu tr {border-bottom: 1pt dotted var(--brand-color-1);}
+.tbl-menu td { padding:8px;}
+h2 {color: var(--brand-color-1); }
+</style>
 <div class="container container-inner-banner">
 <div id="res-menu" class="d-flex justify-content-center">
 	<div class="row mt-0 mb-2 p-2 container d-flex align-items-center">
@@ -112,16 +119,12 @@ include_once('header.php'); ?>
 <img src="img/menu/menu-6.png" class="menu-pic pb-2">
 <?php  }?>
 <?php if ($s=="combo"){ ?>
-<style>
-#combo tr {border-bottom: 1pt dotted var(--brand-color-1);}
-#combo td { padding:8px;}
-</style>
 <div style="max-width: 1000px;">
 <p class="text-end p-3">Legend 🌶 = Spicy | V = Vegetarian | 🦐 = Contains shellfish</p>
 <p></p>
 <p></p>
-<table id="combo">
-<tr><td><h2>Lunch Special Combos(11am-3pm; Wed-Mon)</h2><b>Served with your choice of steamed rice or jeera (cumin) rice or 1 naan or 2 roti.</b></td><td><b></b></td></tr>
+<table class="tbl-menu">
+<tr><td><h2>Lunch Special Combos (11am-3pm; Wed-Mon)</h2><b>Served with your choice of steamed rice or jeera (cumin) rice or 1 naan or 2 roti.</b></td><td><b></b></td></tr>
 <tr><td><b>Butter chicken combo</b><br/>Creamy tomato-and-butter based chicken curry</td><td><b>$9.99</b></td></tr>
 <tr><td><b>Palak chicken combo</b><br/>Tender chicken simmered in a spiced spinach (palak) gravy</td><td><b>$9.99</b></td></tr>
 <tr><td><b>Butter chicken combo</b><br/>Creamy butter chicken</td><td><b>$9.99</b></td></tr>
@@ -160,15 +163,89 @@ include_once('header.php'); ?>
 <tr><td><b>Sweet & Sour Chicken Piece</b><br/>Crispy fried chicken pieces tossed in a tangy sweet-and-sour sauce with bell peppers and pineapple.</td><td><b>$17.99</b></td></tr>
 <tr><td><b>Chicken with Cashew Nut — 🥜</b><br/>Tender chicken stir-fried with roasted cashew nuts, onionsand peppers in a savory sauce.</td><td><b>$18.99 </b></td></tr>
 <tr><td><b>Chicken with Black Bean</b><br/>Flavorful chicken with bell peppers, onions, and aromatic fermented black bean sauce.</td><td><b>$17.99</b></td></tr>
-<tr><td><b></b><br/></td><td><b></b></td></tr>
 </table>
 </div>
 <?php  }?>
-<?php if ($s=="chinese"){ ?>
+<?php if ($s=="hakka"){ ?>
+<div style="max-width: 1000px;">
+<h2 class="p-3">Legend </h2>
+<ul>
+<li>	🌶 = Spicy / hot
+<li>	🦐 = Contains shellfish (shrimp, squid, crab, seafood)
+<li>	🥜 = Contains tree nuts (cashew)
+<li>	🥚 = Contains egg
+<li>	🌾 = Contains wheat / gluten (soy sauce, battered items)
+<li>	🔸 = Contains soy
+<li>	&nbsp;V&nbsp; = Vegetarian
+</ul>
+
+<p><b>Important allergy notice:</b> Please inform your server of any food allergies. While we identify common allergens on the menu, our kitchen handles many ingredients and cross-contact may occur. We cannot guarantee any item is free from allergens. Substitutions may be available on request.</p>
+<p></p>
+<table class="tbl-menu">
+<tr><td><h2>Drinks</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Mango Punch (Small/Large) </b><br/></td><td><b>$3.50 / $5.50 </b></td></tr>
+<tr><td><b>Lemon Punch (Small/Large) </b><br/></td><td><b>$3.50 / $5.50 </b></td></tr>
+<tr><td><b>Mango Spritz (Small/Large) </b><br/></td><td><b>$3.50 / $5.50</b></td></tr>
+<tr><td><br /><h2>Soups</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Chicken Egg vegetable (Small/Large</b><br/></td><td><b>$4.50 / $6.50 </b></td></tr>
+<tr><td><b>Chicken Sweet Corn Soup (Small/Large) </b><br/></td><td><b>$4.50 / $6.50 </b></td></tr>
+<tr><td><b>Sweet Corn Vegetable (Small/Large) </b><br/></td><td><b>$3.99 / $5.99 </b></td></tr>
+<tr><td><br /><h2>Shrimp (served with steamed rice)</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Shrimp with Mixed Vegetables </b><br/>Tender shrimp stir-fried with mixed seasonal vegetables. 🦐 🔸</td><td><b>$16.99</b></td></tr>
+<tr><td><b>Shrimp with Broccoli </b><br/>Classic shrimp and broccoli in a savory garlic-soy glaze. 🦐 🔸</td><td><b>$16.99</b></td></tr>
+<tr><td><b>Shrimp with Curry Vegetable</b><br/>Shrimp cooked with vegetables in a fragrant curry sauce. 🦐</td><td><b>$16.99</b></td></tr>
+<tr><td><b>Shrimp with Szechuan Sauce</b><br/>Spicy Szechuan-style shrimp with chili and garlic. 🌶 🦐 🔸</td><td><b>$16.99</b></td></tr>
+<tr><td><b>Sweet & Sour Shrimp </b><br/> Crispy shrimp tossed in tangy sweet-and-sour sauce with pineapple. 🦐 🌾</td><td><b>$16.99</b></td></tr>
+<tr><td><br /><h2>Noodles</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Cantonese Noodles ( Chicken)</b><br/>Crispy Noodles topped with chicken, shrimp and mixed vegetables in savory sauce. 🦐 🔸</td><td><b>$14.99</b></td></tr>
+<tr><td><b>Seafood Cantonese Noodles ( Shrimp)</b><br/>Crispy Noodles with a medley of seafood and vegetables. 🦐 🔸</td><td><b>$16.99</b></td></tr>
+<tr><td><b>Mix Cantonese Noodles (Chicken, Egg, Shrimp) — </b><br/>Three-protein Cantonese-style Noodles with mixed vegetables. 🦐 🔸</td><td><b>$16.99</b></td></tr>
+<tr><td><b>Shrimp Cantonese Noodles </b><br/>Crispy noodles topped with shrimp and vegetables. 🦐 🔸</td><td><b>$16.99</b></td></tr>
+<tr><td><b>Vegetable Cantonese Noodles </b><br/>Crispy noodles with assorted seasonal vegetables. V</td><td><b>$13.99</b></td></tr>
+<tr><td><b>American Chop Suey (chicken & shrimp) </b><br/>Soft-style noodles with chicken, shrimp and vegetables (sweet & slightly spicy). 🌶 🦐 🔸</td><td><b>$14.99</b></td></tr>
+<tr><td><b>Vegetable American Chop Suey </b><br/>Soft noodles stir-fried with mixed vegetables. V</td><td><b>$13.99</b></td></tr>
+<tr><td><b>Shrimp American Chop Suey </b><br/>Cripsy noodles with shrimp and mixed vegetables. 🦐 🔸</td><td><b>$16.99 </b></td></tr>
+<tr><td><br /><h2>Fried Rice (no spicy)</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Egg Fried Rice </b><br/>Simple egg-fried rice with egg and mixed vegetables. </td><td><b>$9.99</b></td></tr>
+<tr><td><b>Chicken Fried Rice</b><br/>Classic fried rice with diced chicken and vegetables. 🔸</td><td><b>$11.99</b></td></tr>
+<tr><td><b>Shrimp Fried Rice</b><br/>Fried rice tossed with plump shrimp and scallions. 🦐 🔸</td><td><b>$14.99</b></td></tr>
+<tr><td><b>Vegetable Fried Rice</b><br/>Stir-fried rice with a mix of fresh vegetables. V</td><td><b>$9.99</b></td></tr>
+<tr><td><b>3 Kinds of Meat Fried Rice (chicken, egg, shrimp) </b><br/>Namaste fried rice with three proteins. 🦐 🔸</td><td><b>$14.99 </b></td></tr>
+<tr><td><b>Steamed Rice </b><br/>Plain steamed white rice. (V)</td><td><b>$4.50</b></td></tr>
+<tr><td><br /><h2>Manchurian Fried Rice (red/spicy style)</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Manchurian Chicken Fried Rice</b><br/>Spicy red-style fried rice with diced chicken and Manchurian sauce. 🌶 🔸</td><td><b>$12.99</b></td></tr>
+<tr><td><b>Manchurian Shrimp Fried Rice</b><br/>Spicy-style fried rice with shrimp and bold Manchurian flavors. 🌶 🦐 🔸</td><td><b>$15.50</b></td></tr>
+<tr><td><b>Manchurian Mix Fried Rice</b><br/>Mixed-protein Manchurian fried rice (chicken, Egg, shrimp). 🌶 🦐 🔸</td><td><b>$15.99</b></td></tr>
+<tr><td><b>Manchurian Vegetable Fried Rice</b><br/>Vegetarian Manchurian-style fried rice with mixed vegetables. V 🌶</td><td><b>$10.99</b></td></tr>
+<tr><td><br /><h2>Chicken (served with steamed rice)</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Chicken with Mixed Vegetables</b><br/>🔸</td><td><b>$12.99</b></td></tr>
+<tr><td><b>Chicken Curry with Mixed Vegetables</b><br/>(mild curry) 🔸</td><td><b>$13.99</b></td></tr>
+<tr><td><b>Chicken with Mushroom</b><br/>🔸</td><td><b>$13.99</b></td></tr>
+<tr><td><b>Chicken with Broccoli</b><br/>🔸</td><td><b>$13.99</b></td></tr>
+<tr><td><b>Sweet & Sour Chicken Piece</b><br/>Crispy chicken pieces in sweet & sour sauce. 🌾 🔸</td><td><b>$13.99</b></td></tr>
+<tr><td><b>Chicken with Cashew Nut</b><br/>Stir-fried chicken with cashew nuts. 🥜 🔸</td><td><b>$13.99</b></td></tr>
+<tr><td><b>Chicken with Black Bean</b><br/>🔸</td><td><b>$13.99 </b></td></tr>
+<tr><td><b>Chicken with Green Bean </b><br/>🔸</td><td><b>$13.99</b></td></tr>
+<tr><td><br /><h2>Chicken (served with steamed rice)</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Vegetarian (served with steamed rice)</b><br/></td><td><b></b></td></tr>
+<tr><td><b>Manchurian Broccoli </b><br/>V 🌶 🔸</td><td><b>$13.50 </b></td></tr>
+<tr><td><b>Manchurian Mix Vegetable </b><br/>V 🌶 </td><td><b>$13.50 </b></td></tr>
+<tr><td><b>Vegetable Curry </b><br/>V</td><td><b>$13.50 </b></td></tr>
+<tr><td><b>Szechuan Vegetable </b><br/>V 🌶 🔸</td><td><b>$13.50 </b></td></tr>
+<tr><td><b>Manchurian Tofu </b><br/>V 🌶 🔸</td><td><b>$13.50 </b></td></tr>
+<tr><td><b>Garlic Tofu (sweet & spicy</b><br/>V 🔸</td><td><b>$13.50 </b></td></tr>
+<tr><td><b>Vegetable Delight (Mix Veg) </b><br/>V 🔸</td><td><b>$13.50 </b></td></tr>
+<tr><td><br /><h2>Fish (served with steamed rice)</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Fish with Mixed Vegetable </b><br/>Flaky fish fillet stir-fried with seasonal vegetables. 🐟 🔸</td><td><b>$14.99</b></td></tr>
+<tr><td><b>Curry Fish with Vegetable </b><br/>Fish in a mild curry sauce with vegetables. 🐟</td><td><b>$14.99</b></td></tr>
+<tr><td><b>Sweet & Sour Fish </b><br/>Crispy fish in tangy sweet-and-sour sauce. 🐟 🌾</td><td><b>$14.99</b></td></tr>
+</table>
+</div>
 <?php  }?>
 
 
 </div>
+<?php if ($s=="nepali" || $s=="indian" || $s=="chinese" ){ ?>
 <div class="d-flex justify-content-center p-3">
 <?php if(isset($show_online_order) && ($show_online_order == true)){?>
 <a href="https://www.clover.com/online-ordering/namaste-pavilion-toronto" target="_blank" class="button-link"> <span class="label">
@@ -183,6 +260,7 @@ include_once('header.php'); ?>
 						</a>
 						<?php } ?>
 </div>
+<?php } ?>
 <!--  Food Gallery Start  -->
 <div class="d-flex justify-content-center">
 <?php include_once('menu_gallery.php'); ?>
