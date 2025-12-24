@@ -5,7 +5,7 @@ $html_title = "Dine-in/Take out Menu of the Namaste Pavilion Restaurant, Scarbor
 $html_title =($s=="nepali")?"Nepali menu: chicken, mutton, buff momo, thali set in Scarborough":$html_title;
 $html_title =($s=="indian")?"Indian menu: Tandoori Chicken, Pokora, Tikka in Scarborough":$html_title;
 $html_title =($s=="chinese")?"Indo-Chinese menu: Soup, Hakka Noodles in Scarborough":$html_title;
-$html_title =($s=="combo")?"Namaste Combo Lunch Special for $9.99 in Scarborough":$html_title;
+$html_title =($s=="combo")?"Namaste Combo Lunch Special under $10 in Scarborough":$html_title;
 $html_title =($s=="hakka")?"Hakka Menu: Drinks, Soups, Shrimp served with steamed rice in Scarborough":$html_title;
 
 $page_title = "Restaurant's Menu - Taste of Nepal";
