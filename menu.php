@@ -7,6 +7,14 @@ $html_title =($s=="indian")?"Indian menu: Tandoori Chicken, Pokora, Tikka in Sca
 $html_title =($s=="chinese")?"Indo-Chinese menu: Soup, Hakka Noodles in Scarborough":$html_title;
 $html_title =($s=="combo")?"Namaste Combo Lunch Special for $9.99 in Scarborough":$html_title;
 $html_title =($s=="hakka")?"Hakka Menu: Drinks, Soups, Shrimp served with steamed rice in Scarborough":$html_title;
+
+$page_title = "Restaurant's Menu - Taste of Nepal";
+$page_title =($s=="nepali")?"Restaurant's Menu - Taste of Nepal":$page_title;
+$page_title =($s=="indian")?"Restaurant's Menu - Taste of India":$page_title;
+$page_title =($s=="chinese")?"Restaurant's Menu - Taste of Indo-Chinese":$page_title;
+$page_title =($s=="combo")?"Restaurant's Menu - Lunch Combo":$page_title;
+$page_title =($s=="hakka")?"Restaurant's Menu - Hakka":$page_title;
+
 include_once('header.php'); ?>
 <style>
 .button-link-menu-bar { min-width: 150px;}
@@ -14,12 +22,13 @@ include_once('header.php'); ?>
 .tbl-menu tr {border-bottom: 1pt dotted var(--brand-color-1);}
 .tbl-menu td { padding:8px;}
 h2 {color: var(--brand-color-1); }
+.menu-price tr { font-weight: 700; border-bottom: 0pt solid #fff; text-align:center;}
 </style>
 <div class="container container-inner-banner">
 <div id="res-menu" class="d-flex justify-content-center">
 	<div class="row mt-0 mb-2 p-2 container d-flex align-items-center">
 		<div class="col col-sm-6 pt-2 pb-2 ">
-		<h1 class="page-h1">Restaurant's Menu</h1>
+		<h1 class="page-h1"><?php echo $page_title;?></h1>
 			<p class="pb-3">Taste the harmonious convergence of Nepalese,
 				Chinese, and Indian cuisines at our restaurant, offering everything
 				from appetizers to main dishes, sides, sweets, and beverages.</p>
@@ -107,7 +116,30 @@ h2 {color: var(--brand-color-1); }
 
 <div id="menu-container" class="row d-flex justify-content-center">
 <?php if ($s=="nepali"){ ?>
-<img src="img/menu/menu-1.png" class="menu-pic pb-2">
+<div style="max-width: 1000px;">
+<p class="text-end p-3"></p>
+
+<table class="tbl-menu">
+<tr><td><h2>MOMO SPECIAL</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Steam Momo</b><br/>Steamed dumplings served in a spicy, tangy Nepali-style sesame-tomato broth.</td><td><table class='menu-price'><tr><td>Veg</td><td>Chicken</td><td>Buff</td></tr><tr><td>$11.99</td><td>$12.99</td><td>$13.99</td></tr></table></td></tr>
+<tr><td><b>Fried Momo</b><br/>Steamed or fried dumplings served in a fiery tomato- chili sauce with Nepali spices and fresh herbs.</td><td><table class='menu-price'><tr><td>Veg</td><td>Chicken</td><td>Buff</td></tr><tr><td>$12.99</td><td>$13.99</td><td>$14.99</td></tr></table></td></tr>
+<tr><td><b>C-Momo</b><br/>Steamed or fried dumplings served in a fiery tomato- chili sauce with Nepali spices and fresh herbs.</td><td><table class='menu-price'><tr><td>Veg</td><td>Chicken</td><td>Buff</td></tr><tr><td>$12.99</td><td>$13.99</td><td>$14.99</td></tr></table></td></tr>
+<tr><td><b>Tandoori Momo</b><br/> Marinated dumplings roasted in a tandoor, smoky and full of spice.</td><td><table class='menu-price'><tr><td>Veg</td><td>Chicken</td><td>Buff</td></tr><tr><td>$12.99</td><td>$13.99</td><td>$14.99</td></tr></table></td></tr>
+<tr><td><b>Hariyali Momo</b><br/> Dumplings marinated in a vibrant green herb & spice blend, grilled to smoky perfection with a minty kick.</td><td><table class='menu-price'><tr><td>Veg</td><td>Chicken</td><td>Buff</td></tr><tr><td>$13.99</td><td>$14.99</td><td>$15.99</td></tr></table></td></tr>
+<tr><td><b>Namaste Pavilion Special - Momo (Jhol) </b><br/>Steamed dumplings served in a spicy, tangy Nepali- style sesame-tomato sauce.</td><td><table class='menu-price'><tr><td>Veg</td><td>Chicken</td><td>Buff</td></tr><tr><td>$13.99</td><td>$14.99</td><td>$15.99</td></tr></table></td></tr>
+<tr><td><h2><br/>KHAZA SPECIAL</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Sukuti Buff</b><br/>Dried buffalo meat slow-cooked with traditional Nepali spices, garlic, ginger, and timur for a rich, smoky flavor, served with bhuja. </td><td><b>$16.99</b></td></tr>
+<tr><td><b>Mutton Ko Bhutun</b><br/>Pan-fried goat stomach, heart and liver sautéed with garlic, ginger, onions, and bold Nepali spices for a rich and hearty taste, served with bhuja.  </td><td><b>$16.99 </b></td></tr>
+<tr><td><b>Taas </b><br/>A spicy stir-fried meat dish, made with tender mutton pieces sizzled in hot oil with bold spices, garlic, and dried chili served with bhuja. </td><td><b>$16.99 </b></td></tr>
+<tr><td><b>Buff Choila  </b><br/>Grilled buffalo meat marinated in mustard oil, garlic, and Nepali spices—bold, smoky, and spicy. </td><td><b>$14.99</b></td></tr>
+<tr><td><b>Timur Chicken </b><br/>Chicken stir-fried with Nepali herbs, garlic, and Szechuan pepper (timur) </td><td><b>$14.99</b></td></tr>
+<tr><td><b>Bhatamas Sadheko</b><br/>Crispy roasted soybeans tossed with finely chopped onion, green chili, tomato, coriander, and traditional Nepali spices for a bold and zesty flavor. </td><td><b>$10.99</b></td></tr>
+<tr><td><b>Badam Sadeko</b><br/>Crispy soybeans mixed with onion, chili, tomato, and Nepali spices for a bold, zesty taste. </td><td><b>$11.99</b></td></tr>
+<tr><td><h2><br/>CHEF'S SPECIAL</h2><b></b></td><td><b></b></td></tr>
+<tr><td><b>Non-Veg Thali</b><br/>A deluxe Nepali platter curated by our chef — includes rice, your choice of premium curry chicken or mutton, daal, seasonal vegetables, chicken pakora, pickles, chutney, raita, salad, papad and gulab jamun served with love and tradition.</td><td><b>$19.99</b></td></tr>
+<tr><td><b>Veg Thali</b><br/>A deluxe Nepali platter curated by our chef — includes rice, daal, two seasonal vegetables, Veg pakora, pickles, chutney, raita, salad, papad and gulab jamun served with love and tradition. </td><td><b>$17.99</b></td></tr>
+</table>
+</div>
 <?php  }?>
 <?php if ($s=="indian"){ ?>
 <img src="img/menu/menu-2.png" class="menu-pic pb-2">
