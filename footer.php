@@ -127,7 +127,12 @@
 						</td>
 						<td class="text"><a href="http://www.namastepavilion.ca">http://www.namastepavilion.ca</a></td>
 					</tr>
-				</table>
+				</table><br /><br />
+				<h5>Opening Hours:</h5>
+				<table>
+					<tr><td>Wed - Mon &nbsp; &nbsp;  &nbsp; </td><td>11:00am - 9:00pm EST</td></tr>
+					<tr><td>Tues</td><td>Closed</td></tr>
+					</table>
 			</div>
 			<div class="col text-center map">
 				<h5 class="p-1">Find us on Google Map:</h5>

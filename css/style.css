@@ -115,11 +115,8 @@ h5{
 	padding: 0;
 
 }
-#top-bar .nav-link{	
-	font-size:13px;
-	font-weight: 500;
-
-}
+#top-bar .nav-link{font-size:13px;font-weight: 500;}
+#top-bar .dropdown-item{font-size:13px;font-weight: 500;}
 #top-bar .social-col{ 
 	max-width: 200px;
 	padding:0;
@@ -477,7 +474,7 @@ font-family: "Dynalight", "Comic Sans", cursive;
 	border-left: 1px dotted var(--brand-color-7);	
 }
 #footer-menu-bar .contact table td{
-padding: 10px 5px;	
+padding: 4px 5px;
 } 
 #footer-menu-copyright {
 	background-color: var(--brand-color-1);

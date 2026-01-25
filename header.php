@@ -44,6 +44,21 @@ if(!isset($html_title)){
     "url" : ""
 }
 </script>
+<style>
+/* Show main dropdown on hover */
+
+
+.navbar-nav .dropdown:hover > .cat-nav-link {
+  display: block;
+  margin-top: 0;
+  position:absolute;
+}
+
+.navbar,
+.navbar .container-fluid {
+  overflow: visible !important;
+}
+</style>
 </head>
 <body>
 
@@ -78,8 +93,12 @@ if(!isset($html_title)){
           <a class="nav-link" href="events">EVENTS</a>
         </li>
         -->
-		<li class="nav-item">
-          <a class="nav-link" href="catering">CATERING</a>
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">CATERING</a>
+          <ul class="dropdown-menu cat-nav-link">
+            <li><a class="dropdown-item" href="catering-takeout">TAKE-OUT PACKAGE</a></li>
+            <li><a class="dropdown-item" href="catering-onsite">ONSITE PARTY-MENU</a></li>
+            </ul>
         </li>
         <!-- 
         <li class="nav-item">
