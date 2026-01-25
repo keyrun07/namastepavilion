@@ -1,4 +1,5 @@
 <?php
+header('Location: catering-takeout');
 $html_title = "Catering Service at Namaste Pavilion Restaurant, Scarborough";
 include_once('header.php'); ?>
 <div class="container container-inner-banner">

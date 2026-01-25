@@ -1,10 +1,19 @@
 <?php include("setting.php");?>
 <!DOCTYPE html><html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYENK6QFKN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EYENK6QFKN');
+</script>
 <meta charset="utf-8">
 <?php 
 if(!isset($html_title)){
-    $html_title = "Namaste Pavilion Restaurant | 客滿亭  | Event Venue in Scarborough";
+    $html_title = "Namaste Pavilion Restaurant | 亭阁餐厅 | Event Venue in Scarborough";
 }
 ?>
 <title><?php echo $html_title; ?></title>

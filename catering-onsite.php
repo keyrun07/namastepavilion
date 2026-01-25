@@ -2,16 +2,8 @@
 $html_title = "Onsite Catering Package at Namaste Pavilion Restaurant, Scarborough";
 include_once ('header.php');
 ?>
-<div class="container container-inner-banner">
-	<img src="img/inner_banner2.jpg" alt="About Us Banner" class="d-block"
-		style="width: 100%">
-</div>
-<div class="container container-inner-main">
-
-	<h1 class="page-h1">Onsite Catering Package</h1>
-	<div id="catering-container" class="row d-flex justify-content-center">
-	<style>
-#package .col {margin: 5pt;  border-radius: 10px; text-align: center !important;}
+<style>
+#package .col {margin: 5pt;  border-radius: 10px; text-align: center !important; min-width:300px;}
 #package .title {  border-radius:  0 0 10px 10px; padding:5px; font-weight:700; font-size:20px;}
 #package .detail { padding: 25px 0; }
 #package .price { padding: 25px 0; }
@@ -30,8 +22,19 @@ include_once ('header.php');
 #options .title {background-color: #FBDCC9; font-weight:600; font-size: 18px;}
 #options .detail {font-size: 14px; font-weight:600;}
 h2 {font-size: 22px;}
+
+#navi .link {text-align: center !important; }
+#navi .link p {font-weight:600; font-size: .9rem;}
 </style>
-<p> We offer a variety of customizable starter and dinner menus tailored to your taste and budget. The pricing below includes both <b>food</b> and <b><a href="venue">venue</a></b> rental when you choose on-site catering at our venue.</p>
+<div class="container container-inner-banner">
+	<img src="img/inner_banner2.jpg" alt="About Us Banner" class="d-block"
+		style="width: 100%">
+</div>
+<div class="container container-inner-main">
+
+	<h1 class="page-h1">Onsite Catering Package</h1>
+	<div id="catering-container" class="row d-flex justify-content-center">
+<p>We offer a variety of customizable starter and dinner menus tailored to your taste and budget. The standard package pricing below includes both <b>food</b> and <b><a href="venue">venue</a></b> rental when you choose on-site catering for your next event at our venue.</p>
 		<div id="package" class="row">
 			<div class="col pack-vegi">
 				<div class="title">VEGI</div>
@@ -154,7 +157,36 @@ h2 {font-size: 22px;}
 </ul>
 		</div>
 		
-		
+		<div class="row  p-5" id="navi">
+			<div class="col link">
+			<p>Check our Venues</p>
+			<a href="venue" class="button-link"> <span class="label">
+								Event Venue <span class="icon"> <svg class="bookNow"
+										fill="currentColor" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24">
+<path fill="currentColor"
+											d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
+							</span>
+						</span>
+						</a>
+			
+			</div>
+			<div class="col link">
+			<p>Check our take-out catering packages<p>
+			<a href="catering-takeout" class="button-link"> <span class="label">
+								Take-Out Package <span class="icon"> <svg class="bookNow"
+										fill="currentColor" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24">
+<path fill="currentColor"
+											d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
+							</span>
+						</span>
+						</a>
+			
+			</div>
+			</div>
 		
 	</div>
 	<br />

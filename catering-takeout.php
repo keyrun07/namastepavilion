@@ -2,6 +2,97 @@
 $html_title = "Take-Out Catering Package at Namaste Pavilion Restaurant, Scarborough";
 include_once ('header.php');
 ?>
+<style>
+#package .col {
+	margin: 5pt;
+	border-radius: 10px;
+	text-align: center !important;
+	min-width: 300px;
+}
+
+#package .title {
+	border-radius: 0 0 10px 10px;
+	padding: 5px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+#package .detail {
+	padding: 25px 0;
+}
+
+#package .price {
+	padding: 25px 0;
+}
+
+.pack-vegi {
+	background-color: #E2ECD6;
+}
+
+.pack-silver {
+	background-color: #FFE3CB;
+}
+
+.pack-gold {
+	background-color: #B8ADD5;
+}
+
+.pack-daimond {
+	background-color: #BDD5F7;
+}
+
+.pack-vegi .title {
+	background-color: #ADD68B;
+}
+
+.pack-silver .title {
+	background-color: #FCC777;
+}
+
+.pack-gold .title {
+	background-color: #7E6AAE;
+}
+
+.pack-daimond .title {
+	background-color: #689ADE;
+}
+
+#options table {
+	border-collapse: separate;
+	border-spacing: 3px;
+}
+
+#options table td {
+	border: 1pt solid #F4A973;
+	padding: 15px 10px;
+	border-radius: 8px;
+	spacing: 1px;
+}
+
+#options .title {
+	background-color: #FBDCC9;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+#options .detail {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+#navi .link {
+	text-align: center !important;
+}
+
+#navi .link p {
+	font-weight: 600;
+	font-size: .9rem;
+}
+</style>
 <div class="container container-inner-banner">
 	<img src="img/inner_banner2.jpg" alt="About Us Banner" class="d-block"
 		style="width: 100%">
@@ -10,28 +101,10 @@ include_once ('header.php');
 
 	<h1 class="page-h1">Take-Out Catering Package</h1>
 	<div id="catering-container" class="row d-flex justify-content-center">
-	<style>
-#package .col {margin: 5pt;  border-radius: 10px; text-align: center !important;}
-#package .title {  border-radius:  0 0 10px 10px; padding:5px; font-weight:700; font-size:20px;}
-#package .detail { padding: 25px 0; }
-#package .price { padding: 25px 0; }
-.pack-vegi {background-color: #E2ECD6; }
-.pack-silver {background-color: #FFE3CB; }
-.pack-gold {background-color: #B8ADD5; }
-.pack-daimond {background-color: #BDD5F7; }
 
-.pack-vegi .title {background-color: #ADD68B; }
-.pack-silver .title {background-color: #FCC777; }
-.pack-gold .title {background-color: #7E6AAE; }
-.pack-daimond .title {background-color: #689ADE; }
-
-#options table {  border-collapse: separate;  border-spacing: 3px;}
-#options table td {border: 1pt solid #F4A973; padding:15px 10px; border-radius: 8px; spacing: 1px;}
-#options .title {background-color: #FBDCC9; font-weight:600; font-size: 18px;}
-#options .detail {font-size: 14px; font-weight:600;}
-h2 {font-size: 22px;}
-</style>
-<p> We offer a variety of customizable starter and dinner menus tailored to your taste and budget.</p>
+		<p>We offer a variety of customizable starter and dinner menus
+			tailored to your taste and budget. The standard package pricing below
+			for take-out catering.</p>
 		<div id="package" class="row">
 			<div class="col pack-vegi">
 				<div class="title">VEGI</div>
@@ -67,8 +140,9 @@ h2 {font-size: 22px;}
 						<strong>Starter</strong><br>Vegi - 2<br>Meat - 1
 					</p>
 					<p>
-						<strong>Main Course</strong><br>Carbs - 2<br>Vegi - 2<br>Meat - 1<span style="font-size: .8rem"><br>(Chicken)</span><br>Pickle
-						- 1<br>Salad - 1
+						<strong>Main Course</strong><br>Carbs - 2<br>Vegi - 2<br>Meat - 1<span
+							style="font-size: .8rem"><br>(Chicken)</span><br>Pickle - 1<br>Salad
+						- 1
 					</p>
 					<p>
 						<strong>Dessert&nbsp;</strong><br>Dessert - 1
@@ -91,8 +165,9 @@ h2 {font-size: 22px;}
 						<strong>Starter</strong><br>Vegi -2<br>Meat-2&nbsp;
 					</p>
 					<p>
-						<strong>Main Course</strong><br>Carbs - 2<br>Vegi - 2<br>Meat-2<span style="font-size: .8rem"><br>(Goat
-						/ Chicken)</span><br>Pickle - 1<br>Salad- 1
+						<strong>Main Course</strong><br>Carbs - 2<br>Vegi - 2<br>Meat-2<span
+							style="font-size: .8rem"><br>(Goat / Chicken)</span><br>Pickle -
+						1<br>Salad- 1
 					</p>
 					<p>
 						<strong>Dessert</strong><br>Dessert - 1
@@ -115,9 +190,9 @@ h2 {font-size: 22px;}
 						<strong>Starter</strong><br>Vegi - 3<br>Meat - 3
 					</p>
 					<p>
-						<strong>Main Course</strong><br>Carbs - 2<br>Vegi - 3<br>Meat - 3<span style="font-size: .8rem"><br>(Goat
-						/ Chicken / Salmon / Shrimp /Biryani)</span><br>Pickle - 1<br>Dipping - 1<br>Salad
-						- 1
+						<strong>Main Course</strong><br>Carbs - 2<br>Vegi - 3<br>Meat - 3<span
+							style="font-size: .8rem"><br>(Goat / Chicken / Salmon / Shrimp
+							/Biryani)</span><br>Pickle - 1<br>Dipping - 1<br>Salad - 1
 					</p>
 					<p>
 						<strong>Dessert&nbsp;</strong><br>Dessert - 2
@@ -132,36 +207,107 @@ h2 {font-size: 22px;}
 			</div>
 		</div>
 		<div id="options">
-		<br/>
-		<h2>Options</h2>
-		<table>
-		<tr><td class="title">Stater Vegi</td><td class="detail">&bull; Veg Pakora &bull; Paneer Pakora &bull; Chaat Papri &bull; Samosa Chaat &bull; Veg Samosa &bull; Spring Rolls &bull; Veg Manchurian &bull; Paneer Chilli &bull; Gobi Chilli &bull; Aloo Tikki &bull; Tandoori Soya Chap &bull; Paneer Tikka &bull; Honey Garlic Chilli Momos &bull; French Fries &bull; Onion Rings.</td></tr>
-		<tr><td class="title">Stater Meat</td><td class="detail">Fish Pakora &bull; Tandoori Chicken &bull; Chicken Lollipop &bull; Bombay Chicken &bull; Chicken Chilli &bull; Chicken 65 &bull; Chicken Pakora &bull; Chicken Wings &bull; Dragon Chicken &bull; Shrimp Tempura &bull; Chicken Momos.</td></tr>
-		<tr><td class="title">Main Course Vegi</td><td class="detail">Chana Masala &bull; Dal Tadka &bull; Paneer Kadai &bull; Palak Paneer &bull; Dal Makhani &bull; Mix Veg &bull; Aloo Gobi &bull; Matar Paneer &bull; Shahi Paneer &bull; Malai Kofta &bull; Bhindi Do Pyaza &bull; Aloo Dum</td></tr>
-		<tr><td class="title">Main Course Meat</td><td class="detail">Chicken Curry &bull; Palak Chicken &bull; Lamb Curry &bull; Butter Chicken &bull; Goat Curry &bull; Fish Curry &bull; Kadhai Goat &bull; Chicken Tikka Masala &bull; Lamb Karahi</td></tr>
-		<tr><td class="title">Carbs</td><td class="detail">Jeera Pulao Rice &bull; Plain Rice &bull; Naan &bull; Tandoori Roti &bull; Pasta &bull; Noodles.</td></tr>
-		<tr><td class="title">Desserts</td><td class="detail">Carrot Halwa &bull; Gulab Jamun &bull; Rasmalai &bull; Falooda &bull; Ice Cream &bull; Pink Lady Kulfi &bull; Mango Kulfi &bull; Date & Pistachio Kulfi.</td></tr>
-		<tr><td class="title">Dipping</td><td class="detail">Mint Raita &bull; Imli Chutney &bull; Cucumber Raita</td></tr>
-		</table>
-		
-		<br />
-		<h2>Upgrades</h2><ul>
-<li> Lamb Roganjosh or Kadhai Lamb (per 25 package): +C$60 flat
-<li> Jumbo Shrimp Entree (Jhinga LaLa / prawn curry): +C$60 flat
-<li> Estimated additional charges (recommended Lamb Rogan josh or Kadhai Lamb (per 25 package): +C$60 flat
-<li> Jumbo Shrimp Entree (Jhinga LaLa / prawn curry): +C$50 flat
-<li> Biryani upgrade (Shahi Subz or chicken/lamb biryani): +C$40 flat
-</ul>
-<br />
-		<h2>Additional Services</h2><ul>
-<li> Additional server (if required): C$25 / hr (5 hr typical) = C$125
-<li> Chef onsite (if required): C$45 / hr (5 hr typical) = C$225
-<li> Delivery estimate (local): C$50 - $120
-</ul>
+			<br />
+			<h2>Options</h2>
+			<table>
+				<tr>
+					<td class="title">Stater Vegi</td>
+					<td class="detail">&bull; Veg Pakora &bull; Paneer Pakora &bull;
+						Chaat Papri &bull; Samosa Chaat &bull; Veg Samosa &bull; Spring
+						Rolls &bull; Veg Manchurian &bull; Paneer Chilli &bull; Gobi
+						Chilli &bull; Aloo Tikki &bull; Tandoori Soya Chap &bull; Paneer
+						Tikka &bull; Honey Garlic Chilli Momos &bull; French Fries &bull;
+						Onion Rings.</td>
+				</tr>
+				<tr>
+					<td class="title">Stater Meat</td>
+					<td class="detail">Fish Pakora &bull; Tandoori Chicken &bull;
+						Chicken Lollipop &bull; Bombay Chicken &bull; Chicken Chilli
+						&bull; Chicken 65 &bull; Chicken Pakora &bull; Chicken Wings
+						&bull; Dragon Chicken &bull; Shrimp Tempura &bull; Chicken Momos.</td>
+				</tr>
+				<tr>
+					<td class="title">Main Course Vegi</td>
+					<td class="detail">Chana Masala &bull; Dal Tadka &bull; Paneer
+						Kadai &bull; Palak Paneer &bull; Dal Makhani &bull; Mix Veg &bull;
+						Aloo Gobi &bull; Matar Paneer &bull; Shahi Paneer &bull; Malai
+						Kofta &bull; Bhindi Do Pyaza &bull; Aloo Dum</td>
+				</tr>
+				<tr>
+					<td class="title">Main Course Meat</td>
+					<td class="detail">Chicken Curry &bull; Palak Chicken &bull; Lamb
+						Curry &bull; Butter Chicken &bull; Goat Curry &bull; Fish Curry
+						&bull; Kadhai Goat &bull; Chicken Tikka Masala &bull; Lamb Karahi</td>
+				</tr>
+				<tr>
+					<td class="title">Carbs</td>
+					<td class="detail">Jeera Pulao Rice &bull; Plain Rice &bull; Naan
+						&bull; Tandoori Roti &bull; Pasta &bull; Noodles.</td>
+				</tr>
+				<tr>
+					<td class="title">Desserts</td>
+					<td class="detail">Carrot Halwa &bull; Gulab Jamun &bull; Rasmalai
+						&bull; Falooda &bull; Ice Cream &bull; Pink Lady Kulfi &bull;
+						Mango Kulfi &bull; Date & Pistachio Kulfi.</td>
+				</tr>
+				<tr>
+					<td class="title">Dipping</td>
+					<td class="detail">Mint Raita &bull; Imli Chutney &bull; Cucumber
+						Raita</td>
+				</tr>
+			</table>
+
+			<br />
+			<h2>Upgrades</h2>
+			<ul>
+				<li>Lamb Roganjosh or Kadhai Lamb (per 25 package): +C$60 flat
+				
+				<li>Jumbo Shrimp Entree (Jhinga LaLa / prawn curry): +C$60 flat
+				
+				<li>Estimated additional charges (recommended Lamb Rogan josh or
+					Kadhai Lamb (per 25 package): +C$60 flat
+				
+				<li>Jumbo Shrimp Entree (Jhinga LaLa / prawn curry): +C$50 flat
+				
+				<li>Biryani upgrade (Shahi Subz or chicken/lamb biryani): +C$40 flat
+
+
+				
+			
+			</ul>
+			<br />
+			<h2>Additional Services</h2>
+			<ul>
+				<li>Additional server (if required): C$25 / hr (5 hr typical) =
+					C$125
+				
+				<li>Chef onsite (if required): C$45 / hr (5 hr typical) = C$225
+				
+				<li>Delivery estimate (local): C$50 - $120
+			
+			</ul>
 		</div>
-		
-		
-		
+
+		<!-- Links Starts -->
+		<div class="row  p-5" id="navi">
+			<div class="col link">
+				<p>Check our Onsite Catering Packages which includes venue rental
+					fee as well.</p>
+				<a href="catering-onsite" class="button-link"> <span class="label">Onsite
+						Catering Package <span class="icon"> <svg class="bookNow"
+								fill="currentColor" version="1.1"
+								xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								viewBox="0 0 24 24">
+							<path fill="currentColor"
+									d="M21.8,6.8H7.7v1.4h13.1L6.9,22.1l-0.1,0.1l1,1L21.8,9.2v13.1h1.4V8.2C23.2,7.4,22.6,6.8,21.8,6.8z"></path></svg>
+					</span>
+				</span>
+				</a>
+			</div>
+		</div>
+		<!-- Links Ends -->
+
+
 	</div>
 	<br />
 </div>

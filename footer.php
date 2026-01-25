@@ -52,7 +52,7 @@
 				<img alt="Facebook" src="img/full_logo.png" width="125"
 					title="Namaste Pavilion Restaurant">
 				<p class="p-2 mb-0" style="font-size: 24px; font-weight: 600">Namaste
-					Pavilion Restaurant <br/> 客滿亭</p>
+					Pavilion Restaurant <br/>亭阁餐厅</p>
 				<p>Namaste Pavilion isn't just a restaurant; it's a versatile
 					destination for dining and events. Enjoy authentic Nepalese,
 					Indian, and Indo-Chinese cuisine, including a popular lunch buffet.
